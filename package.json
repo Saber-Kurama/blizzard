@@ -1,0 +1,45 @@
+{
+  "name": "blizzard",
+  "description": "模拟守望先锋的官网",
+  "version": "0.0.1",
+  "author": {
+    "name": "guochao",
+    "email": "463561248@qq.com",
+    "url": "https://github.com/saber_kurama"
+  },
+  "bugs": {
+    "url": "",
+    "email": ""
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "run-sequence": "^1.1.5"
+  },
+  "devEngines": {
+    "node": "5.x",
+    "npm": "3.x"
+  },
+  "engines": {
+    "node": "5.1.0"
+  },
+  "homepage": "",
+  "keywords": [
+
+  ],
+  "license": "MIT",
+  "main": " ",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "dev": "gulp dev"
+  }
+}

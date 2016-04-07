@@ -1,0 +1,33 @@
+{
+  "name": "blizzard",
+  "version": "0.0.1",
+  "description": "模拟守望先锋的官网",
+  "main": [
+
+  ],
+  "dependencies": {
+    "jquery": "1.12.2"
+  },
+  "devDependencies": {
+
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    ""
+  ],
+  "authors": [
+    "saber"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
