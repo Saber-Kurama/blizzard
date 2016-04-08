@@ -8,18 +8,20 @@
  */
 'use strict';
 
-var gulp        = require('gulp');
-var runSequence = require('run-sequence');
-//var browserSync = require('browser-sync');
-// 开发任务
-gulp.task('dev', ['clean'], function(cb) {
+var config     = require('../config');
+//只允许改变的文件通过管道。
+//var changed    = require('gulp-changed');
+var gulp       = require('gulp');
+var gulpif     = require('gulp-if');
+var imagemin   = require('gulp-imagemin');
 
-  cb = cb || function() {};
+gulp.task('images', function() {
 
-  //global.isProd = false;
+  var dest = config.images.dest;
 
-  runSequence('vendors', 'copyassests', 'images', 'scripts', 'styles', 'views', 'watch', cb);
-  //runSequence('lib', 'images', 'tmodtpl', 'copyfonts',
-  // 'styles','views','scripts','watch', cb);
+  return gulp.src(config.images.src)
+      //.pipe(changed(dest)) // Ignore unchanged files
+      //.pipe(gulpif(global.isProd, imagemin()))    // Optimize
+      .pipe(gulp.dest(dest));
 
 });

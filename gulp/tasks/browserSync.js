@@ -7,19 +7,15 @@
  * Created by saber on 16/4/7.
  */
 'use strict';
-
+// 浏览器同步工具
+var config      = require('../config');
+var browserSync = require('browser-sync').create('saber');
 var gulp        = require('gulp');
-var runSequence = require('run-sequence');
-//var browserSync = require('browser-sync');
-// 开发任务
-gulp.task('dev', ['clean'], function(cb) {
 
-  cb = cb || function() {};
+gulp.task('browserSync', function() {
 
-  //global.isProd = false;
-
-  runSequence('vendors', 'copyassests', 'images', 'scripts', 'styles', 'views', 'watch', cb);
-  //runSequence('lib', 'images', 'tmodtpl', 'copyfonts',
-  // 'styles','views','scripts','watch', cb);
+  browserSync.init({
+    proxy: 'localhost:' + config.server.port
+  });
 
 });

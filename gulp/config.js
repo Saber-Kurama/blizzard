@@ -32,5 +32,41 @@ module.exports = {
   // dist 的目录
   'dist': {
     root: 'dist'
+  },
+  'images': {
+    'src': ['src/images/**/*'],
+    'dest': 'dist/images'
+  },
+  'vendors': {
+    'dist':'vendors.js',
+    'src': [
+      'bower_components/jquery/dist/jquery.min.js'
+    ],
+    'dest': 'dist/js'
+  },
+  'scripts': {
+    src: ['src/js/*.js'],
+    dest: 'dist/js'
+  },
+  'styles':{
+    'watch':['src/less/*.less','src/less/*/*.less'],
+    'src': ['src/less/index.less'],
+    'dest': 'dist/css'
+  },
+  'views': {
+    src: ['src/index.html','src/html/**/*.html'],
+    dest:'dist'
+  },
+  lint: {
+    js: {
+      dest: 'src/js/'
+    }
+  },
+  'rev':{
+    vendor: 'rev/vendor'
+  },
+
+  server: {
+    port: 9300
   }
 }

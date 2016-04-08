@@ -7,5 +7,7 @@
  * Created by saber on 16/4/7.
  */
 var home = {
+    init: function(){
 
+    }
 };

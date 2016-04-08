@@ -31,6 +31,6 @@ gulp.task('copyicon',function(){
       .pipe(gulp.dest(config.copy.icon.dest));
 });
 
-gulp.task('copyassests',['copycss', 'copyfonts', 'copyimages', 'copyicon' ],function(){
+gulp.task('copyassests',['copyfonts'],function(){
   
-})
+});

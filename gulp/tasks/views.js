@@ -8,18 +8,17 @@
  */
 'use strict';
 
-var gulp        = require('gulp');
-var runSequence = require('run-sequence');
-//var browserSync = require('browser-sync');
-// 开发任务
-gulp.task('dev', ['clean'], function(cb) {
-
-  cb = cb || function() {};
-
-  //global.isProd = false;
-
-  runSequence('vendors', 'copyassests', 'images', 'scripts', 'styles', 'views', 'watch', cb);
-  //runSequence('lib', 'images', 'tmodtpl', 'copyfonts',
-  // 'styles','views','scripts','watch', cb);
-
-});
+var gulp = require('gulp');
+var config = require('../config');
+//var revCollector = require('gulp-rev-collector');
+// 创建一个 views 任务
+gulp.task("views",function(){
+  return gulp.src(config.views.src)
+      // .pipe( revCollector({
+      // 	replaceReved: true,
+      // 	dirReplacements: {
+      //               'css/': "css/"
+      //            }
+      // }))
+      .pipe(gulp.dest(config.views.dest));
+})

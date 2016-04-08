@@ -9,17 +9,9 @@
 'use strict';
 
 var gulp        = require('gulp');
-var runSequence = require('run-sequence');
-//var browserSync = require('browser-sync');
-// 开发任务
-gulp.task('dev', ['clean'], function(cb) {
+var browserSync = require('browser-sync').get('saber');
 
-  cb = cb || function() {};
-
-  //global.isProd = false;
-
-  runSequence('vendors', 'copyassests', 'images', 'scripts', 'styles', 'views', 'watch', cb);
-  //runSequence('lib', 'images', 'tmodtpl', 'copyfonts',
-  // 'styles','views','scripts','watch', cb);
+gulp.task('reload', function() {
+  browserSync.reload();
 
 });

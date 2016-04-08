@@ -6,13 +6,18 @@
 /**
  * Created by saber on 16/4/7.
  */
-//vendor
-
 'use strict';
+var gulp = require('gulp');
 var config = require('../config');
-var gulp   = require('gulp');
-var del    = require('del');
-
-gulp.task('clean', function(cb) {
-  return del([config.dist.root], cb);
+var cache = require('gulp-cached');
+var gulpif = require('gulp-if');
+var uglify = require('gulp-uglify');
+var browserSync  = require('browser-sync').get('saber');
+// 创建一个 scripts 任务
+gulp.task("scripts",function(){
+  return gulp.src(config.scripts.src)
+      .pipe(cache('scripts'))
+      //.pipe(gulpif(global.isProd,uglify()))
+      .pipe(gulp.dest(config.scripts.dest));
+  //.pipe(gulpif(browserSync.active, browserSync.reload()));
 });
