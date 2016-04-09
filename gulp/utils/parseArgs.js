@@ -30,9 +30,10 @@
 var minimist = require('minimist');
 
 module.exports = function(){
-  minimist(process.argv.slice(2), {
+  return minimist(process.argv.slice(2), {
     boolean: [
-      'rev'
+      'rev',
+      'production'
     ]
   });
 }

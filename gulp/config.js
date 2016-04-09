@@ -29,6 +29,7 @@ module.exports = {
       dest: 'dist/images'
     }
   },
+  src: 'src',
   // dist 的目录
   'dist': {
     root: 'dist'
@@ -63,7 +64,10 @@ module.exports = {
     }
   },
   'rev':{
-    vendor: 'rev/vendor'
+    vendor: 'rev/vendor',
+    js: 'rev/js',
+    revPath: 'rev/**/*.json',
+    htmlsrc: ['dist/index.html','dist/**/*.html']
   },
 
   server: {

@@ -4,12 +4,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 /**
- * Created by saber on 16/4/7.
+ * Created by saber on 16/4/8.
  */
-var home = {
-    init: function(){
-        console.log('why');
-        var username = 'saber';
-        console.log('????/');
-    }
+var home123 = {
+  init: function(){
+    console.log('why');
+    var username = 'saber123';
+    console.log('????/');
+  }
 };

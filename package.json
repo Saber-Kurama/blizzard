@@ -37,6 +37,7 @@
     "gulp-rev-collector": "^1.0.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.0.8",
     "minimist": "^1.2.0",
     "run-sequence": "^1.1.5"
   },
@@ -60,6 +61,7 @@
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "production": "gulp production --production"
   }
 }

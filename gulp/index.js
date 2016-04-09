@@ -9,6 +9,9 @@
 "use strict";
 // 引入文件读取模块
 var fs = require("fs");
+var parseArgs = require('./utils/parseArgs');
+global.argv = parseArgs();
+console.log(parseArgs());
 // 同步读取目录 gulp/tasks
 var tasks = fs.readdirSync("./gulp/tasks/");
 // 循环加载每个任务

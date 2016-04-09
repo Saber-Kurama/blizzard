@@ -17,7 +17,7 @@ var browserSync  = require('browser-sync').get('saber');
 gulp.task("scripts",function(){
   return gulp.src(config.scripts.src)
       .pipe(cache('scripts'))
-      //.pipe(gulpif(global.isProd,uglify()))
+      .pipe(gulpif(global.argv.production, uglify()))
       .pipe(gulp.dest(config.scripts.dest));
   //.pipe(gulpif(browserSync.active, browserSync.reload()));
 });
