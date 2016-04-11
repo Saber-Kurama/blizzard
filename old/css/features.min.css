@@ -1,1 +1,2948 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{max-width:100%;border:0}svg:not(:root){overflow:hidden}figure{margin:1em 0}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inline-block;font:inline-block;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{padding:0;margin:0}*,:after,:before{box-sizing:border-box}html{font-size:62.5%;box-sizing:border-box}body{font-size:1.4rem;font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif}ol,ul{list-style-type:none}img{height:auto}a{text-decoration:none}a:link,a:visited{outline:0}.pure-g{letter-spacing:-.31em;*letter-spacing:normal;*word-spacing:-.43em;text-rendering:optimizespeed;font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;-ms-align-content:flex-start;-webkit-align-content:flex-start;align-content:flex-start}.opera-only:-o-prefocus,.pure-g{word-spacing:-.43em}.pure-u{display:inline-block;*display:inline;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}.pure-u-1,.pure-u-1-1,.pure-u-1-12,.pure-u-1-2,.pure-u-1-24,.pure-u-1-3,.pure-u-1-4,.pure-u-1-5,.pure-u-1-6,.pure-u-1-8,.pure-u-10-24,.pure-u-11-12,.pure-u-11-24,.pure-u-12-24,.pure-u-13-24,.pure-u-14-24,.pure-u-15-24,.pure-u-16-24,.pure-u-17-24,.pure-u-18-24,.pure-u-19-24,.pure-u-2-24,.pure-u-2-3,.pure-u-2-5,.pure-u-20-24,.pure-u-21-24,.pure-u-22-24,.pure-u-23-24,.pure-u-24-24,.pure-u-3-24,.pure-u-3-4,.pure-u-3-5,.pure-u-3-8,.pure-u-4-24,.pure-u-4-5,.pure-u-5-12,.pure-u-5-24,.pure-u-5-5,.pure-u-5-6,.pure-u-5-8,.pure-u-6-24,.pure-u-7-12,.pure-u-7-24,.pure-u-7-8,.pure-u-8-24,.pure-u-9-24{display:inline-block;*display:inline;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}.pure-u-1-24{width:4.1667%;*width:4.1357%}.pure-u-1-12,.pure-u-2-24{width:8.3333%;*width:8.3023%}.pure-u-1-8,.pure-u-3-24{width:12.5%;*width:12.469%}.pure-u-1-6,.pure-u-4-24{width:16.6667%;*width:16.6357%}.pure-u-1-5{width:20%;*width:19.969%}.pure-u-5-24{width:20.8333%;*width:20.8023%}.pure-u-1-4,.pure-u-6-24{width:25%;*width:24.98%}.pure-u-7-24{width:29.1667%;*width:29.1357%}.pure-u-1-3,.pure-u-8-24{width:33.3333%;*width:33.3023%}.pure-u-3-8,.pure-u-9-24{width:37.5%;*width:37.469%}.pure-u-2-5{width:40%;*width:39.969%}.pure-u-10-24,.pure-u-5-12{width:41.6667%;*width:41.6357%}.pure-u-11-24{width:45.8333%;*width:45.8023%}.pure-u-1-2,.pure-u-12-24{width:50%;*width:49.969%}.pure-u-13-24{width:54.1667%;*width:54.1357%}.pure-u-14-24,.pure-u-7-12{width:58.3333%;*width:58.3023%}.pure-u-3-5{width:60%;*width:59.969%}.pure-u-15-24,.pure-u-5-8{width:62.5%;*width:62.469%}.pure-u-16-24,.pure-u-2-3{width:66.6667%;*width:66.6357%}.pure-u-17-24{width:70.8333%;*width:70.8023%}.pure-u-18-24,.pure-u-3-4{width:75%;*width:74.969%}.pure-u-19-24{width:79.1667%;*width:79.1357%}.pure-u-4-5{width:80%;*width:79.969%}.pure-u-20-24,.pure-u-5-6{width:83.3333%;*width:83.3023%}.pure-u-21-24,.pure-u-7-8{width:87.5%;*width:87.469%}.pure-u-11-12,.pure-u-22-24{width:91.6667%;*width:91.6357%}.pure-u-23-24{width:95.8333%;*width:95.8023%}.pure-u-1,.pure-u-1-1,.pure-u-24-24,.pure-u-5-5{width:100%}@media screen and (min-width:1281px){.hide-for-large,.hide-for-large-down,.hide-for-large-only,.hide-for-medium,.hide-for-medium-down,.hide-for-medium-only,.hide-for-small,.hide-for-small-down,.hide-for-small-only,.hide-for-xxlarge,.hide-for-xxlarge-only,.hide-for-xxlarge-up,.show-for-large-up,.show-for-medium-up,.show-for-small-up,.show-for-xlarge,.show-for-xlarge-down,.show-for-xlarge-only,.show-for-xlarge-up,.show-for-xxlarge-down{display:inline-block!important}.hide-for-large-up,.hide-for-medium-up,.hide-for-small-up,.hide-for-xlarge,.hide-for-xlarge-down,.hide-for-xlarge-only,.hide-for-xlarge-up,.hide-for-xxlarge-down,.show-for-large,.show-for-large-down,.show-for-large-only,.show-for-medium,.show-for-medium-down,.show-for-medium-only,.show-for-small,.show-for-small-down,.show-for-small-only,.show-for-xxlarge,.show-for-xxlarge-only,.show-for-xxlarge-up{display:none!important}.pure-u-xlg-1-24{width:4.1667%;*width:4.1357%}.pure-u-xlg-1-12,.pure-u-xlg-2-24{width:8.3333%;*width:8.3023%}.pure-u-xlg-1-8,.pure-u-xlg-3-24{width:12.5%;*width:12.469%}.pure-u-xlg-1-6,.pure-u-xlg-4-24{width:16.6667%;*width:16.6357%}.pure-u-xlg-1-5{width:20%;*width:19.969%}.pure-u-xlg-5-24{width:20.8333%;*width:20.8023%}.pure-u-xlg-1-4,.pure-u-xlg-6-24{width:25%;*width:24.969%}.pure-u-xlg-7-24{width:29.1667%;*width:29.1357%}.pure-u-xlg-1-3,.pure-u-xlg-8-24{width:33.3333%;*width:33.3023%}.pure-u-xlg-3-8,.pure-u-xlg-9-24{width:37.5%;*width:37.469%}.pure-u-lg-2-5{width:40%;*width:39.969%}.pure-u-xlg-10-24,.pure-u-xlg-5-12{width:41.6667%;*width:41.6357%}.pure-u-xlg-11-24{width:45.8333%;*width:45.8023%}.pure-u-xlg-1-2,.pure-u-xlg-12-24{width:50%;*width:49.969%}.pure-u-xlg-13-24{width:54.1667%;*width:54.1357%}.pure-u-xlg-14-24,.pure-u-xlg-7-12{width:58.3333%;*width:58.3023%}.pure-u-xlg-3-5{width:60%;*width:59.969%}.pure-u-xlg-15-24,.pure-u-xlg-5-8{width:62.5%;*width:62.469%}.pure-u-xlg-16-24,.pure-u-xlg-2-3{width:66.6667%;*width:66.6357%}.pure-u-xlg-17-24{width:70.8333%;*width:70.8023%}.pure-u-xlg-18-24,.pure-u-xlg-3-4{width:75%;*width:74.969%}.pure-u-xlg-19-24{width:79.1667%;*width:79.1357%}.pure-u-xlg-4-5{width:80%;*width:79.969%}.pure-u-xlg-20-24,.pure-u-xlg-5-6{width:83.3333%;*width:83.3023%}.pure-u-xlg-21-24,.pure-u-xlg-7-8{width:87.5%;*width:87.469%}.pure-u-xlg-11-12,.pure-u-xlg-22-24{width:91.6667%;*width:91.6357%}.pure-u-xlg-23-24{width:95.8333%;*width:95.8023%}.pure-u-xlg-1,.pure-u-xlg-1-1,.pure-u-xlg-24-24,.pure-u-xlg-5-5{width:100%}}@media screen and (max-width:1280px){.hide-for-medium,.hide-for-medium-down,.hide-for-medium-only,.hide-for-small,.hide-for-small-down,.hide-for-small-only,.hide-for-xlarge,.hide-for-xlarge-only,.hide-for-xlarge-up,.hide-for-xxlarge,.hide-for-xxlarge-only,.hide-for-xxlarge-up,.show-for-large,.show-for-large-down,.show-for-large-only,.show-for-large-up,.show-for-medium-up,.show-for-small-up,.show-for-xlarge-down,.show-for-xxlarge-down{display:inline-block!important}.hide-for-large,.hide-for-large-down,.hide-for-large-only,.hide-for-large-up,.hide-for-medium-up,.hide-for-small-up,.hide-for-xlarge-down,.hide-for-xxlarge-down,.show-for-medium,.show-for-medium-down,.show-for-medium-only,.show-for-small,.show-for-small-down,.show-for-small-only,.show-for-xlarge,.show-for-xlarge-only,.show-for-xlarge-up,.show-for-xxlarge,.show-for-xxlarge-only,.show-for-xxlarge-up{display:none!important}.pure-u-lg-1-24{width:4.1667%;*width:4.1357%}.pure-u-lg-1-12,.pure-u-lg-2-24{width:8.3333%;*width:8.3023%}.pure-u-lg-1-8,.pure-u-lg-3-24{width:12.5%;*width:12.469%}.pure-u-lg-1-6,.pure-u-lg-4-24{width:16.6667%;*width:16.6357%}.pure-u-lg-1-5{width:20%;*width:19.969%}.pure-u-lg-5-24{width:20.8333%;*width:20.8023%}.pure-u-lg-1-4,.pure-u-lg-6-24{width:25%;*width:24.969%}.pure-u-lg-7-24{width:29.1667%;*width:29.1357%}.pure-u-lg-1-3,.pure-u-lg-8-24{width:33.3333%;*width:33.3023%}.pure-u-lg-3-8,.pure-u-lg-9-24{width:37.5%;*width:37.469%}.pure-u-lg-2-5{width:40%;*width:39.969%}.pure-u-lg-10-24,.pure-u-lg-5-12{width:41.6667%;*width:41.6357%}.pure-u-lg-11-24{width:45.8333%;*width:45.8023%}.pure-u-lg-1-2,.pure-u-lg-12-24{width:50%;*width:49.969%}.pure-u-lg-13-24{width:54.1667%;*width:54.1357%}.pure-u-lg-14-24,.pure-u-lg-7-12{width:58.3333%;*width:58.3023%}.pure-u-lg-3-5{width:60%;*width:59.969%}.pure-u-lg-15-24,.pure-u-lg-5-8{width:62.5%;*width:62.469%}.pure-u-lg-16-24,.pure-u-lg-2-3{width:66.6667%;*width:66.6357%}.pure-u-lg-17-24{width:70.8333%;*width:70.8023%}.pure-u-lg-18-24,.pure-u-lg-3-4{width:75%;*width:74.969%}.pure-u-lg-19-24{width:79.1667%;*width:79.1357%}.pure-u-lg-4-5{width:80%;*width:79.969%}.pure-u-lg-20-24,.pure-u-lg-5-6{width:83.3333%;*width:83.3023%}.pure-u-lg-21-24,.pure-u-lg-7-8{width:87.5%;*width:87.469%}.pure-u-lg-11-12,.pure-u-lg-22-24{width:91.6667%;*width:91.6357%}.pure-u-lg-23-24{width:95.8333%;*width:95.8023%}.pure-u-lg-1,.pure-u-lg-1-1,.pure-u-lg-24-24,.pure-u-lg-5-5{width:100%}}@media screen and (max-width:1024px){.hide-for-large,.hide-for-large-only,.hide-for-large-up,.hide-for-small,.hide-for-small-down,.hide-for-small-only,.hide-for-xlarge,.hide-for-xlarge-only,.hide-for-xlarge-up,.hide-for-xxlarge,.hide-for-xxlarge-only,.hide-for-xxlarge-up,.show-for-large-down,.show-for-medium,.show-for-medium-down,.show-for-medium-only,.show-for-medium-up,.show-for-small-up,.show-for-xlarge-down,.show-for-xxlarge-down{display:inline-block!important}.hide-for-large-down,.hide-for-medium,.hide-for-medium-down,.hide-for-medium-only,.hide-for-medium-up,.hide-for-small-up,.hide-for-xlarge-down,.hide-for-xxlarge-down,.show-for-large,.show-for-large-only,.show-for-large-up,.show-for-small,.show-for-small-down,.show-for-small-only,.show-for-xlarge,.show-for-xlarge-only,.show-for-xlarge-up,.show-for-xxlarge,.show-for-xxlarge-only,.show-for-xxlarge-up{display:none!important}.pure-u-md-1-24{width:4.1667%;*width:4.1357%}.pure-u-md-1-12,.pure-u-md-2-24{width:8.3333%;*width:8.3023%}.pure-u-md-1-8,.pure-u-md-3-24{width:12.5%;*width:12.469%}.pure-u-md-1-6,.pure-u-md-4-24{width:16.6667%;*width:16.6357%}.pure-u-md-1-5{width:20%;*width:19.969%}.pure-u-md-5-24{width:20.8333%;*width:20.8023%}.pure-u-md-1-4,.pure-u-md-6-24{width:25%;*width:24.969%}.pure-u-md-7-24{width:29.1667%;*width:29.1357%}.pure-u-md-1-3,.pure-u-md-8-24{width:33.3333%;*width:33.3023%}.pure-u-md-3-8,.pure-u-md-9-24{width:37.5%;*width:37.469%}.pure-u-md-2-5{width:40%;*width:39.969%}.pure-u-md-10-24,.pure-u-md-5-12{width:41.6667%;*width:41.6357%}.pure-u-md-11-24{width:45.8333%;*width:45.8023%}.pure-u-md-1-2,.pure-u-md-12-24{width:50%;*width:49.969%}.pure-u-md-13-24{width:54.1667%;*width:54.1357%}.pure-u-md-14-24,.pure-u-md-7-12{width:58.3333%;*width:58.3023%}.pure-u-md-3-5{width:60%;*width:59.969%}.pure-u-md-15-24,.pure-u-md-5-8{width:62.5%;*width:62.469%}.pure-u-md-16-24,.pure-u-md-2-3{width:66.6667%;*width:66.6357%}.pure-u-md-17-24{width:70.8333%;*width:70.8023%}.pure-u-md-18-24,.pure-u-md-3-4{width:75%;*width:74.969%}.pure-u-md-19-24{width:79.1667%;*width:79.1357%}.pure-u-md-4-5{width:80%;*width:79.969%}.pure-u-md-20-24,.pure-u-md-5-6{width:83.3333%;*width:83.3023%}.pure-u-md-21-24,.pure-u-md-7-8{width:87.5%;*width:87.469%}.pure-u-md-11-12,.pure-u-md-22-24{width:91.6667%;*width:91.6357%}.pure-u-md-23-24{width:95.8333%;*width:95.8023%}.pure-u-md-1,.pure-u-md-1-1,.pure-u-md-24-24,.pure-u-md-5-5{width:100%}}@media screen and (max-width:768px){.hide-for-large,.hide-for-large-only,.hide-for-large-up,.hide-for-medium,.hide-for-medium-only,.hide-for-medium-up,.hide-for-xlarge,.hide-for-xlarge-only,.hide-for-xlarge-up,.hide-for-xxlarge,.hide-for-xxlarge-only,.hide-for-xxlarge-up,.show-for-large-down,.show-for-medium-down,.show-for-small,.show-for-small-down,.show-for-small-only,.show-for-small-up,.show-for-xlarge-down,.show-for-xxlarge-down{display:inline-block!important}.hide-for-large-down,.hide-for-medium-down,.hide-for-small,.hide-for-small-down,.hide-for-small-only,.hide-for-small-up,.hide-for-xlarge-down,.hide-for-xxlarge-down,.show-for-large,.show-for-large-only,.show-for-large-up,.show-for-medium,.show-for-medium-only,.show-for-medium-up,.show-for-xlarge,.show-for-xlarge-only,.show-for-xlarge-up,.show-for-xxlarge,.show-for-xxlarge-only,.show-for-xxlarge-up{display:none!important}.pure-u-sm-1-24{width:4.1667%;*width:4.1357%}.pure-u-sm-1-12,.pure-u-sm-2-24{width:8.3333%;*width:8.3023%}.pure-u-sm-1-8,.pure-u-sm-3-24{width:12.5%;*width:12.469%}.pure-u-sm-1-6,.pure-u-sm-4-24{width:16.6667%;*width:16.6357%}.pure-u-sm-1-5{width:20%;*width:19.969%}.pure-u-sm-5-24{width:20.8333%;*width:20.8023%}.pure-u-sm-1-4,.pure-u-sm-6-24{width:25%;*width:24.969%}.pure-u-sm-7-24{width:29.1667%;*width:29.1357%}.pure-u-sm-1-3,.pure-u-sm-8-24{width:33.3333%;*width:33.3023%}.pure-u-sm-3-8,.pure-u-sm-9-24{width:37.5%;*width:37.469%}.pure-u-sm-2-5{width:40%;*width:39.969%}.pure-u-sm-10-24,.pure-u-sm-5-12{width:41.6667%;*width:41.6357%}.pure-u-sm-11-24{width:45.8333%;*width:45.8023%}.pure-u-sm-1-2,.pure-u-sm-12-24{width:50%;*width:49.969%}.pure-u-sm-13-24{width:54.1667%;*width:54.1357%}.pure-u-sm-14-24,.pure-u-sm-7-12{width:58.3333%;*width:58.3023%}.pure-u-sm-3-5{width:60%;*width:59.969%}.pure-u-sm-15-24,.pure-u-sm-5-8{width:62.5%;*width:62.469%}.pure-u-sm-16-24,.pure-u-sm-2-3{width:66.6667%;*width:66.6357%}.pure-u-sm-17-24{width:70.8333%;*width:70.8023%}.pure-u-sm-18-24,.pure-u-sm-3-4{width:75%;*width:74.969%}.pure-u-sm-19-24{width:79.1667%;*width:79.1357%}.pure-u-sm-4-5{width:80%;*width:79.969%}.pure-u-sm-20-24,.pure-u-sm-5-6{width:83.3333%;*width:83.3023%}.pure-u-sm-21-24,.pure-u-sm-7-8{width:87.5%;*width:87.469%}.pure-u-sm-11-12,.pure-u-sm-22-24{width:91.6667%;*width:91.6357%}.pure-u-sm-23-24{width:95.8333%;*width:95.8023%}.pure-u-sm-1,.pure-u-sm-1-1,.pure-u-sm-24-24,.pure-u-sm-5-5{width:100%}}@media screen and (max-width:640px){.pure-u-xsm-1-24{width:4.1667%;*width:4.1357%}.pure-u-xsm-1-12,.pure-u-xsm-2-24{width:8.3333%;*width:8.3023%}.pure-u-xsm-1-8,.pure-u-xsm-3-24{width:12.5%;*width:12.469%}.pure-u-xsm-1-6,.pure-u-xsm-4-24{width:16.6667%;*width:16.6357%}.pure-u-xsm-1-5{width:20%;*width:19.969%}.pure-u-xsm-5-24{width:20.8333%;*width:20.8023%}.pure-u-xsm-1-4,.pure-u-xsm-6-24{width:25%;*width:24.969%}.pure-u-xsm-7-24{width:29.1667%;*width:29.1357%}.pure-u-xsm-1-3,.pure-u-xsm-8-24{width:33.3333%;*width:33.3023%}.pure-u-xsm-3-8,.pure-u-xsm-9-24{width:37.5%;*width:37.469%}.pure-u-xsm-2-5{width:40%;*width:39.969%}.pure-u-xsm-10-24,.pure-u-xsm-5-12{width:41.6667%;*width:41.6357%}.pure-u-xsm-11-24{width:45.8333%;*width:45.8023%}.pure-u-xsm-1-2,.pure-u-xsm-12-24{width:50%;*width:49.969%}.pure-u-xsm-13-24{width:54.1667%;*width:54.1357%}.pure-u-xsm-14-24,.pure-u-xsm-7-12{width:58.3333%;*width:58.3023%}.pure-u-xsm-3-5{width:60%;*width:59.969%}.pure-u-xsm-15-24,.pure-u-xsm-5-8{width:62.5%;*width:62.469%}.pure-u-xsm-16-24,.pure-u-xsm-2-3{width:66.6667%;*width:66.6357%}.pure-u-xsm-17-24{width:70.8333%;*width:70.8023%}.pure-u-xsm-18-24,.pure-u-xsm-3-4{width:75%;*width:74.969%}.pure-u-xsm-19-24{width:79.1667%;*width:79.1357%}.pure-u-xsm-4-5{width:80%;*width:79.969%}.pure-u-xsm-20-24,.pure-u-xsm-5-6{width:83.3333%;*width:83.3023%}.pure-u-xsm-21-24,.pure-u-xsm-7-8{width:87.5%;*width:87.469%}.pure-u-xsm-11-12,.pure-u-xsm-22-24{width:91.6667%;*width:91.6357%}.pure-u-xsm-23-24{width:95.8333%;*width:95.8023%}.pure-u-xsm-1,.pure-u-xsm-1-1,.pure-u-xsm-24-24,.pure-u-xsm-5-5{width:100%}}.pure-menu{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.pure-menu-fixed{left:0;top:0;z-index:3}.pure-menu-list{list-style:none;margin:0;padding:0}.pure-menu-item{padding:0;margin:0;height:100%}.pure-menu-heading,.pure-menu-link{display:block;text-decoration:none;white-space:nowrap}.pure-menu-horizontal{width:100%;white-space:nowrap}.pure-menu-horizontal .pure-menu-list{display:inline-block;background-image:url(http://overwatch.nos.netease.com/1/images/layout/bg-top.png);-webkit-background-size:contain;-ms-background-size:contain;background-size:contain}.pure-menu-horizontal .pure-menu-heading,.pure-menu-horizontal .pure-menu-item,.pure-menu-horizontal .pure-menu-separator{display:inline-block;*display:inline;zoom:1;vertical-align:middle}.pure-menu-separator{background-color:#ccc;height:1px;margin:.3em 0}.pure-menu-horizontal .pure-menu-separator{width:1px;height:1.3em;margin:0 .3em}.pure-menu-heading{text-transform:uppercase;color:#565d64}.pure-menu-link{color:#777}.pure-menu-disabled,.pure-menu-heading,.pure-menu-link{padding:.5em 1em}.pure-menu-disabled{opacity:.5}.pure-menu-disabled .pure-menu-link:hover{background-color:transparent}.pure-menu-active>.pure-menu-link,.pure-menu-link:focus,.pure-menu-link:hover{background-color:#eee}.pure-menu-selected .pure-menu-link,.pure-menu-selected .pure-menu-link:visited{color:#000}.f-center{text-align:center}.f-left{text-align:left}.f-right{text-align:right}.f-vm{vertical-align:middle}body,html{overflow-x:hidden}body{color:#fff;background:#102e56}a{transition:color 200ms ease 0s;color:#ffc70e}a:focus,a:hover{color:#fff}.shadow-text,a,h1,h2,h3,h4,h5,h6,p,span{text-shadow:1px 1px 1px rgba(0,0,0,.5)}.clearFix:after{display:block;visibility:hidden;clear:both;height:0;content:'.'}.clearFix{display:block;*display:inline-block}* html .clearFix{height:1%}.wrapper{position:relative;-webkit-transition:all .6s ease 0s;transition:all .6s ease 0s}.wrapper .body .section{padding:0}.g-wrap-limit{overflow:hidden;min-width:320px;max-width:1920px;margin:0 auto}.btn{display:inline-block;padding:.9rem 3rem;transition:none;-webkit-transform:skew(-.25rad);-ms-transform:skew(-.25rad);transform:skew(-.25rad);text-align:center}.btn span{display:inline-block;-webkit-transform:skew(.25rad);-ms-transform:skew(.25rad);transform:skew(.25rad);text-transform:uppercase;text-shadow:none}.btn-sm{font-size:1.2em;border-radius:.2rem}.btn-md{font-size:1.6rem;padding:.8rem 4rem;border-radius:.7rem}.btn-lg{font-size:2.4rem;border-radius:.4rem}.btn-primary{color:#511616;border:1px solid #fdda75;background-color:#ffc70e;box-shadow:inset 0 0 10px 5px rgba(237,186,14,.6)}.btn-secondary{color:#fff;background-color:#00c3ff}.btn-hollow{color:#fff;border:2px solid #fff;background-color:rgba(0,0,0,0)}.btn-semi-hollow{color:#fff;border:1px solid #00c3ff;background-color:rgba(0,0,0,0)}.btn-semi-hollow.active:hover,.btn.active,.btn:hover{color:#511616;border-color:#fff;background:#fff;box-shadow:none}.btn-semi-hollow:before{position:absolute;z-index:-1;top:0;right:0;bottom:0;left:0;width:96%;height:84%;margin:auto;content:'';border-radius:.4rem;background-color:rgba(0,195,255,.5)}.btn-semi-hollow.active{color:#fff;border-color:#00c3ff;background-color:rgba(0,0,0,0)}.btn-semi-hollow.active:before{background-color:rgba(0,195,255,.7)}.btn-semi-hollow:hover:before{display:none}.btn-primary-semi-hollow{background-color:rgba(0,0,0,0);border:1px solid #ffc70e;color:#511616}.btn-primary-semi-hollow:before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;margin:auto;width:96%;height:84%;border-radius:4px;background-color:#ffc70e}.btn-primary-semi-hollow.active{background-color:rgba(0,0,0,0);border-color:#ffc70e;color:#511616}.btn-primary-semi-hollow.active:before{background-color:#ffc70e}.btn-primary-semi-hollow:hover:before{display:none}.head{font-size:16px;position:relative;z-index:400}.pure-menu-fixed{position:absolute}.pure-menu-list{position:absolute;z-index:1000;top:0;left:50%;width:100%;margin-left:-50%}.pure-menu-item{z-index:100;width:13.6%;max-width:150px;*margin:0 2px;position:relative}.pure-menu-item.home{height:38px;left:-30px;position:absolute;top:37px}.pure-menu-item.buy{right:50px;top:30px;height:auto;position:absolute}.pure-menu-item.home .menu-btn,.pure-menu-item.home .menu-btn-inner{color:#511616;border-color:#fdda75;background:#ffc70e}.pure-menu-item.home .menu-btn-inner:before{background-color:#ffc70e}.pure-menu-item.home .menu-btn.active .menu-btn-inner span{text-shadow:none}.pure-menu-item a{display:block;width:100%;height:100%}.pure-menu-item .menu-btn{width:100%;height:100%;-webkit-transform:skew(-.25rad);-ms-transform:skew(-.25rad);transform:skew(-.25rad);color:#fff;border:1px solid #10ade7;border:1px solid #00c3ff;border-radius:7px;background-color:#10ade7;background-color:rgba(0,195,255,0);*background-color:#10ade7;*border:1px solid #10ade7}.pure-menu-item .menu-btn-inner:before{position:absolute;z-index:-1;top:0;right:0;bottom:0;left:0;width:97%;height:84%;margin:auto;content:'';border-radius:4px;background-color:rgba(0,195,255,.5)}.pure-menu-item .menu-btn-inner:hover:before{display:none}.pure-menu-item .menu-btn-inner span{font-size:1.6rem;font-weight:700;display:block;padding:7px 0;cursor:pointer;-webkit-transform:skew(.25rad);-ms-transform:skew(.25rad);transform:skew(.25rad);text-shadow:none}.pure-menu-item .menu-btn:hover,.pure-menu-item .menu-btn:hover .menu-btn-inner{color:#511616;border-color:#fff;background:#fff}.pre-purchase-container-inner{position:relative}.pre-purchase-container-inner .tip{position:absolute;bottom:-25px;left:0;width:100%;text-align:center;font-size:14px;color:#fff;font-weight:700;text-shadow:0 0 3px #000}.pre-purchase-container .btn{font-size:1.4em;padding:15px 50px}.pure-menu-item.logo{width:156px;height:108px;margin-top:3px;margin-right:-22px;margin-left:-25px;background:url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png) no-repeat top center;background-size:contain}.pure-menu-item .menu-btn.active .menu-btn-inner span{text-shadow:0 0 20px #fff,0 0 20px rgba(22,143,231,.85),0 0 10px #c7f2ff,0 0 10px #3cadff,0 0 5px #3cadff,0 0 5px #3cadff}.pure-menu-item .menu-btn.active:hover .menu-btn-inner span{text-shadow:none}.pure-menu .menu-main-pin .pin,.pure-menu .pure-menu-list{z-index:400;-webkit-transition:top 300ms ease;transition:top 300ms ease}.pure-menu .pure-menu-list{top:0}.pure-menu .menu-main-pin .pin{position:fixed;z-index:1000;top:-28px;right:0;left:50%;width:95px;height:28px;margin-left:-48px;cursor:pointer;background:url(http://overwatch.nos.netease.com/1/images/layout/main-menu-pin.png) no-repeat center bottom}.pure-menu.menu-hidden .pure-menu-list{top:-150px}.pure-menu.menu-hidden .menu-main-pin .pin{top:0}.side-menu{font-size:46px;position:fixed;z-index:400;top:50%;left:100%;margin-top:-1.5em;margin-left:46px}.side-menu.hidden li{left:-92px}.side-menu.hidden li:hover{left:-100%}.side-menu li{font-size:16px;position:relative;left:-100%;display:block;width:100%;min-width:110px;margin:3px 0;margin-right:46px;padding:0;transition:left 100ms ease;text-align:left;vertical-align:middle;color:#fff;background:#00c3ff}.side-menu li a{font-size:1.2rem;font-weight:700;display:block;width:100%;margin-left:1px;padding:4px 5px;text-align:left;white-space:nowrap;color:#fff}.side-menu li i{font-size:36px;position:relative;display:inline-block;overflow:hidden;width:45px;height:45px;margin:0;padding:0;-webkit-transform:skew(.25rad);-ms-transform:skew(.25rad);transform:skew(.25rad);vertical-align:middle;background:url(http://overwatch.nos.netease.com/1/images/layout/side-menu-icon.png) no-repeat}.side-menu li i.icon-videos{background-position:-14px -12px}.side-menu li.active i.icon-videos,.side-menu li:hover i.icon-videos{background-position:-14px -56px}.side-menu li i.icon-overwatch{background-position:-74px -12px}.side-menu li.active i.icon-overwatch,.side-menu li:hover i.icon-overwatch{background-position:-74px -56px}.side-menu li i.icon-heroes{background-position:-134px -12px}.side-menu li.active i.icon-heroes,.side-menu li:hover i.icon-heroes{background-position:-134px -56px}.side-menu li i.icon-roles{background-position:-190px -12px}.side-menu li.active i.icon-roles,.side-menu li:hover i.icon-roles{background-position:-190px -56px}.side-menu li i.icon-objectives{background-position:-244px -12px}.side-menu li.active i.icon-objectives,.side-menu li:hover i.icon-objectives{background-position:-244px -56px}.side-menu li i.icon-screenshots{background-position:-297px -12px}.side-menu li.active i.icon-screenshots,.side-menu li:hover i.icon-screenshots{background-position:-297px -56px}.side-menu li i.icon-artwork{background-position:-347px -12px}.side-menu li.active i.icon-artwork,.side-menu li:hover i.icon-artwork{background-position:-347px -56px}.side-menu li i.icon-wallpapers{background-position:-401px -12px}.side-menu li.active i.icon-wallpapers,.side-menu li:hover i.icon-wallpapers{background-position:-401px -56px}.side-menu li i.icon-pdf{background-position:-452px -12px}.side-menu li.active i.icon-pdf,.side-menu li:hover i.icon-pdf{background-position:-452px -56px}.side-menu li i.icon-hero{background-position:0 0}.side-menu li.active i.icon-hero,.side-menu li:hover i.icon-hero{background-position:0 -45px}.side-menu li i.icon-abilities{background-image:url(http://overwatch.nos.netease.com/1/images/heroes/detail/right-icon/rightnav-abilities.png);background-position:0 0}.side-menu li.active i.icon-abilities,.side-menu li:hover i.icon-abilities{background-position:0 -45px}.side-menu li i.icon-story{background-image:url(http://overwatch.nos.netease.com/1/images/heroes/detail/right-icon/rightnav-story.png);background-position:0 0}.side-menu li.active i.icon-story,.side-menu li:hover i.icon-story{background-position:0 -45px}.side-menu li span{font-size:.9em;display:inline-block;padding:.5em;-webkit-transform:skew(.25rad);-ms-transform:skew(.25rad);transform:skew(.25rad);text-transform:uppercase;border-left:1px solid rgba(255,255,255,.3);text-shadow:none}.side-menu li.active,.side-menu li:hover{opacity:1}.side-menu li.active a,.side-menu li:hover a{color:#231f20}.side-menu li.active span,.side-menu li:hover span{border-left:1px solid rgba(35,31,32,.1)}.icon{background-image:url(http://overwatch.nos.netease.com/1/images/layout/icon-sprit.png)}.nav{position:fixed;z-index:300;top:0;left:0;width:100%;height:44px;background-color:#081b2b}.nav .logo{position:absolute;right:0;left:0;width:62px;height:62px;margin:auto;background-image:url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png);background-size:150%}.nav .nav-btn{float:left;width:auto;padding:8px 10px;cursor:pointer}.nav .nav-btn.burger .burger-nav{width:44px;height:44px;float:left;left:0;position:absolute;top:0;background-image:url(http://overwatch.nos.netease.com/1/images/layout/icon-orange-menu.png);background-size:44px auto}.menu.menu-main{position:absolute;z-index:200;top:50px;width:100%;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);text-align:center;background:rgba(8,27,43,.9)}.menu.menu-main .menu-item{display:inline-block;width:25%;max-width:7.5em;margin:0 -3px}.menu.menu-main .menu-item a{display:block;padding-top:24px;padding-bottom:5px;-webkit-transform:skew(-.25rad);-ms-transform:skew(-.25rad);transform:skew(-.25rad);color:#fff}.menu.menu-main .menu-item a.active{border-bottom:2px solid #00c3ff}.menu.menu-main .menu-item a:before{position:absolute;right:0;bottom:4px;left:0;width:100%;height:45%;margin:auto;content:'';border-left:2px solid #0b4772;border-radius:0}.menu.menu-main .menu-item:first-child a:before{border-left:none}.menu.menu-main .menu-item a.active span{text-shadow:0 0 20px #008fff,0 0 5px #209dff,0 0 8px #209dff,0 0 30px #008fff,0 0 40px #008fff}.menu.menu-main .menu-item a span{display:block;-webkit-transform:skew(.25rad);-ms-transform:skew(.25rad);transform:skew(.25rad);text-transform:uppercase}.nav-burger-content-wrap{position:absolute;z-index:1000000;bottom:0;right:100%;height:100%;width:80%;background-color:rgba(8,27,43,.98)}.nav-burger-content-wrap .nav-burger-content{font-size:16px;position:relative;padding-top:99px;padding-bottom:30px;text-align:center;background-image:url(http://overwatch.nos.netease.com/1/images/layout/overwatch-burger-header.png);background-repeat:no-repeat;background-position:top center;background-size:255px}.nav-burger-content-wrap .menu-main{text-align:left}.nav-burger-content-wrap .menu-main .menu-item{text-transform:uppercase;border-top:none;border-bottom:1px solid #0b3146}.nav-burger-content-wrap .menu-main .menu-item:first-child{border-top:1px solid #0b3146}.nav-burger-content-wrap .menu-main .menu-item a{position:relative;display:table;width:100%;height:5rem}.nav-burger-content-wrap .menu-main .menu-item a span{display:table-cell;padding-left:10%;vertical-align:middle;color:#fff}.nav-burger-content-wrap .menu-main .menu-item a .icon{position:absolute;top:0;right:25px;bottom:0;margin:auto}i.icon.double-arrow{width:34px;height:34px}.nav-burger-content-wrap .menu-main .menu-item a.active,.nav-burger-content-wrap .menu-main .menu-item a:active{border-left:3px solid #00c3ff;background-color:rgba(0,195,255,.04)}.nav-burger-content-wrap .exit{position:absolute;top:0;left:0;padding:.5em 20px 16px .5em;cursor:pointer}.nav-burger-content-wrap .exit .icon{width:20px;height:20px;opacity:.3}.icon{display:block;position:relative;background-size:contain;background-repeat:no-repeat;background-position:center}i.icon{display:inline-block;height:36px;width:36px;margin:0;padding:0;vertical-align:middle}@media only screen and (max-width:105em){i.icon{height:34px;width:34px}}@media only screen and (max-width:75em){i.icon{height:34px;width:34px}}@media only screen and (max-width:30em){i.icon{height:26px;width:26px}}@media only screen and (max-width:20em){i.icon{height:18px;width:18px}}i.icon.hero-card{background-image:url(http://overwatch.nos.netease.com/1/images/icon/icon-stats01.png)}i.icon.briefcase{background-image:url(http://overwatch.nos.netease.com/1/images/icon/icon-stats02.png)}i.icon.globe{background-image:url(http://overwatch.nos.netease.com/1/images/icon/icon-stats03.png)}i.icon.badge{background-image:url(http://overwatch.nos.netease.com/1/images/icon/icon-stats04.png)}i.icon.double-arrow{background-image:url(http://overwatch.nos.netease.com/1/images/icon/arrow-right.png)}i.icon.double-arrow-left{background-image:url(http://overwatch.nos.netease.com/1/images/icon/arrow-left.png)}i.icon.double-arrow-right{background-image:url(http://overwatch.nos.netease.com/1/images/icon/arrow-right.png)}i.icon.double-arrow-down{background-image:url(http://overwatch.nos.netease.com/1/images/icon/arrow-bottom.png)}i.icon.double-arrow-yellow{background-image:url(http://overwatch.nos.netease.com/1/images/icon/arrow-yellow.png)}i.icon.x{background-image:url(http://overwatch.nos.netease.com/1/images/icon/exit.png)}i.icon.warning-icon{background-image:url(http://overwatch.nos.netease.com/1/images/icon/icon-error-lg.png)}i.icon.role-offense{background-image:url(http://overwatch.nos.netease.com/1/images/icon/role-offense.png);top:-3px}i.icon.role-defense{background-image:url(http://overwatch.nos.netease.com/1/images/icon/role-defense.png);top:-2px}i.icon.role-support{background-image:url(http://overwatch.nos.netease.com/1/images/icon/role-support.png);top:-2px}i.icon.role-tank{background-image:url(http://overwatch.nos.netease.com/1/images/icon/role-tank.png);top:-2px}i.icon.logo{background-image:url(http://overwatch.nos.netease.com/1/images/icon/game.png);height:100px;width:100px}i.icon.franchise-d3{background-image:url(http://overwatch.nos.netease.com/1/images/icon/d3.png)}i.icon.franchise-d3-mono{background-image:url(http://overwatch.nos.netease.com/1/images/icon/d3-mono.png)}i.icon.franchise-hots{background-image:url(http://overwatch.nos.netease.com/1/images/icon/hots.png)}i.icon.franchise-hots-mono{background-image:url(http://overwatch.nos.netease.com/1/images/icon/hots-mono.png)}i.icon.franchise-hs{background-image:url(http://overwatch.nos.netease.com/1/images/icon/hs.png)}i.icon.franchise-hs-mono{background-image:url(http://overwatch.nos.netease.com/1/images/icon/hs-mono.png)}i.icon.franchise-sc2{background-image:url(http://overwatch.nos.netease.com/1/images/icon/sc2.png)}i.icon.franchise-sc2-mono{background-image:url(http://overwatch.nos.netease.com/1/images/icon/sc2-mono.png)}i.icon.franchise-wow{background-image:url(http://overwatch.nos.netease.com/1/images/icon/wow.png)}i.icon.franchise-wow-mono{background-image:url(http://overwatch.nos.netease.com/1/images/icon/wow-mono.png)}i.icon.franchise-ow{background-image:url(http://overwatch.nos.netease.com/1/images/icon/ow.png)}i.icon.cross{background-image:url(http://overwatch.nos.netease.com/1/images/buy/cross.png)}i[class*=" icon-"],i[class^=icon-]{display:inline-block;margin:0;padding:0;line-height:1.2;width:1em;height:1em;overflow:hidden}.wrapper.nav-burger-content-wrap-out{-webkit-transform:translateX(80%);transform:translateX(80%)}.nav-burger-content-wrap .btn-lg{width:80%;font-size:2rem;font-weight:700;margin:30px auto}.ui-breadcrumbs{position:relative;z-index:11;padding:1rem 0 2rem;text-align:left;color:#ffc70e}.ui-breadcrumbs a{display:inline-block;color:#ffc70e;border-bottom:1px dotted #ffc70e}.ui-breadcrumbs a:hover{color:#fff;border-bottom:1px dotted #fff}.icon_bread{display:inline-block;width:15px;height:12px;vertical-align:middle;background-position:-11px -12px}.ui-breadcrumbs a.active{cursor:default;color:#fff;border-bottom:medium none}.beta{margin:0 auto;text-align:center}.beta a{font-size:30px;padding:15px 60px;margin:80px auto;color:#511616}#footer{position:relative;font-size:12px;width:auto;margin:0;background:#102e56}#footer .footerWrap{padding:40px 0 0;margin-bottom:40px;border-top:1px solid rgba(34,117,187,.5)}#footer .logo_bz{display:inline-block;overflow:hidden;width:140px;height:80px;vertical-align:middle;background:url(http://overwatch.nos.netease.com/1/images/layout/blizzard.png) no-repeat 0 0}#footer .logo_ne{display:inline-block;overflow:hidden;width:105px;height:33px;margin:34px 0 0 20px;vertical-align:middle;background:url(http://overwatch.nos.netease.com/1/images/layout/logo_ne.png) no-repeat 0 0}#footer .cprt{max-width:1000px;margin:50px auto 8px;padding:0 0 30px;border-bottom:1px solid #184f85}#footer .cprt .info ul li{color:#ccc;display:inline-block;font-size:14px;padding-right:10px}#footer .cprt .info ul li a{color:#fff;padding-right:10px}#footer .footerWrap a{text-decoration:none;color:#2275bb}#footer .footerWrap a:hover{color:#fefefe}#footer .tips{text-align:center;color:#606981}#footer .cprt .info{position:relative;display:inline-block;padding:20px 0 0 10%;text-align:left;vertical-align:middle;color:#2275bb;*display:inline;*zoom:1}#footer .integrity{padding-top:15px}#footer .integrity a{margin-right:5px}#footer .support-feedback{max-width:1000px;margin:0 auto 10px;color:#ccc;font-size:14px}#footer .cs{float:left}#footer .cs a{color:#ccc}.cs .cs-online{margin-right:37px}.support-feedback .icon{background-image:url(http://overwatch.nos.netease.com/1/images/common/sprite-24-blue.png);background-repeat:no-repeat;background-size:auto}.support-feedback .icon-1,.support-feedback .icon-2{display:inline-block;height:24px;margin-right:7px;position:relative;top:5px;width:24px}.support-feedback .icon-1{background-position:-96px 0}.support-feedback .icon-2{background-position:-144px -24px;top:6px}.support-feedback .business{float:right;vertical-align:top;position:relative}.business .icon-apply,.business .icon-more{background:#262626 none repeat scroll 0 0;border:1px solid #262626;color:#ac771f;cursor:pointer;display:inline-block;height:14px;margin:0 13px;padding-top:0;position:relative;top:3px;width:14px}.business .icon-more{margin-right:0}.business .icon-media{margin-left:13px}.business strong{display:inline}.business .icon-apply i.line-h{height:2px;margin:-1px 0 0 -5px;width:10px}.business .icon-apply i.line-s{height:10px;margin:-5px 0 0 -1px;width:2px}.business .icon-apply i.line-h,.business .icon-apply i.line-s{background:#ccc none repeat scroll 0 0;display:block;left:50%;position:absolute;top:50%}.business .icon-apply:hover i.line-h,.business .icon-apply:hover i.line-s{background:#fff}.business .icon-more i{border:4px solid transparent;border-top-color:#ccc;display:block;width:0;height:0;position:absolute;top:50%;left:50%;margin:-2px 0 0 -4px}.business .icon-more:hover i{border-top-color:#fff}.business .icon-more.hidden i{border-bottom-color:#ccc;border-top-color:transparent;margin:-6px 0 0 -4px}.business .icon-more.hidden:hover i{border-bottom-color:#fff}.business .businessList{display:inline}.business .businessList li{display:inline-block}.business .businessList li img{vertical-align:bottom}#footer .joiner{width:671px;background:#0f0f0f;border:1px solid #151616;position:absolute;right:0;top:22px;display:none;z-index:1}#footer .joiner ul{padding:10px 0 10px 20px}#footer .joiner li{float:left;line-height:22px;text-align:left;padding-right:10px;width:83px}#footer .joiner li a{color:gray}#footer .joiner li a:hover{color:#fff}#footer .joiner li.apply{display:block;float:right}#footer .joiner li.apply a{color:#ea8631;text-decoration:underline}#footer .joiner li.apply a:hover{color:#fff}@font-face{font-family:ow_icon;src:url(/css/fonts/ow.ttf)}@font-face{font-family:price_num;src:url(/css/fonts/BIGNOODLETOOOBLIQUE.ttf)}.heroes-icon{font-family:ow_icon;font-size:2rem;font-style:normal;line-height:2rem;margin:0 3px;vertical-align:middle;color:#00c3ff}.role-tank:before{content:'\e614'}.role-defense:before{content:'\e615'}.role-offense:before{content:'\e616'}.role-support:before{content:'\e617'}.badge:before{content:'\e619'}.globe:before{content:'\e620'}.briefcase:before{content:'\e621'}.hero-card:before{content:'\e622'}.u-btn-skew{display:inline-block;width:100%;padding:.2rem;-webkit-transform:skew(-.25rad);-ms-transform:skew(-.25rad);transform:skew(-.25rad);text-align:center;color:#fff;border:1px solid #00c3ff;border-radius:4px}.u-btn-skew strong{display:block;padding:.5rem;border-radius:4px;background-color:rgba(0,195,255,.5)}.u-btn-skew span{display:block;-webkit-transform:skew(.25rad);-ms-transform:skew(.25rad);transform:skew(.25rad)}.u-btn-skew-white{padding:.7rem 0;border:2px solid #fff}.u-btn-skew-white.active,.u-btn-skew-white:hover{color:#511616;background:#fff}.u-btn-skew-yellow{font-size:1.8rem;padding:1.2rem;color:#511616;border:none;background:#ffc70e}.u-btn-skew-yellow:hover{color:#511616;background:#fff}nav{position:relative}nav>div{padding:0 .2rem;vertical-align:middle!important}#popBox{position:absolute;z-index:99999;display:none;width:70%;height:100%}#boxModel{position:absolute;z-index:99998;top:0;left:0;display:none;background-color:rgba(0,0,0,.7)}#popBox .closeBtn{position:absolute;z-index:99999;top:5px;right:5px;display:block;overflow:hidden;width:36px;height:36px;transition:opacity .5s ease 0s;text-indent:-999px;opacity:.8;background:url(http://overwatch.nos.netease.com/1/images/heroes/detail/exit.3OOEf.png) 0 0 no-repeat;background-size:contain}#popBox .closeBtn:hover{opacity:1;background-position:0 0}.w-light-box{position:absolute;width:100%;height:100%;text-align:center;border:1px solid rgba(0,195,255,.1);background:rgba(3,12,21,.98)}.w-light-box .head{height:15%;padding:.5em 0 0;border-bottom:1px solid rgba(0,195,255,.1);font-size:12px}.w-light-box .title{font-size:2.8em;padding-bottom:.2em}.w-light-box .num{color:#00c3ff;font-size:1.8em}.w-light-box .info{font-size:1.6em;height:15%;padding:.5em;text-align:left;border-top:1px solid rgba(0,195,255,.1)}.w-light-box .content{height:70%;padding:1em 0}.w-light-box .content .pic{display:none}.w-light-box .content .loading{position:absolute;top:50%;left:50%;margin-top:-24px;margin-left:-24px}.w-light-box .control a{position:absolute;top:50%;display:block;width:64px;height:69px;margin-top:-34px;margin-right:1rem;margin-left:1rem}.w-light-box .control a.prev{left:0;background:url(http://overwatch.nos.netease.com/1/images/heroes/detail/arrow-left.2HQ0H.png);background-size:cover}.w-light-box .control a.next{right:0;background:url(http://overwatch.nos.netease.com/1/images/heroes/detail/arrow-right.1hVyK.png);background-size:cover}.w-light-box video{width:100%;height:100%}.w-share{position:absolute;z-index:999;top:30px;left:10px;-webkit-transition:top 300ms ease;transition:top 300ms ease}.pure-menu.menu-hidden .w-share{top:-30rem}.w-share li{float:left;margin-right:-.5rem}.w-share li a{display:block;width:50px;height:54px;transition:background-position .3s;background:url(http://overwatch.nos.netease.com/1/images/layout/share.png) no-repeat 0 0}.w-share li a:hover{transition:background-position .3s}.w-share li a.jiathis_button_tsina{background-position:-3px -1px}.w-share li a.jiathis_button_tqq{background-position:-55px -1px}.w-share li a.jiathis_button_weixin{background-position:-159px -1px}.w-share li a.jiathis_button_yixin{background-position:-107px -1px}.w-share li a.jiathis_button_tieba{background-position:-211px -1px}.w-share li a.jiathis_button_tsina:hover{background-position:-3px -60px}.w-share li a.jiathis_button_tqq:hover{background-position:-55px -60px}.w-share li a.jiathis_button_weixin:hover{background-position:-159px -60px}.w-share li a.jiathis_button_yixin:hover{background-position:-107px -60px}.w-share li a.jiathis_button_tieba:hover{background-position:-211px -60px}.share-wrap{position:relative}.share-wrap #side-menu{top:30px;margin-top:0;display:none}.cprt .ie_warning{display:none;width:355px;height:75px;position:absolute;bottom:100px;right:100px;line-height:14px;font-size:11px;text-align:left;background:url(http://heroes.nos.netease.com/1/images/common/hos_warning.jpg) top center no-repeat}.ie_warning .ie_warning_txt{color:#040000;height:50px;padding:6px 0 0 70px;width:265px}.ie_warning .ie_warning_txt span{color:red}.ie_warning .ie_waring_txt2{padding-left:10px;color:#ffba00}.beta.section{background:url(http://overwatch.nos.netease.com/1/images/home/bg-section-beta.jpg) no-repeat top center;background-size:cover;font-size:3.2rem;border-bottom:none}@media only screen and (max-width:1441px){.w-share{width:50px}.w-share li{margin-top:-10px}}@media only screen and (max-width:1280px){.pre-purchase-container .btn{font-size:1.2em;padding:8px 36px}.pure-menu-item.logo{width:120px;height:84px;margin-right:-18px;margin-left:-20px;background-image:url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png)}.pure-menu-item{margin-top:0}.pure-menu-item.home{top:25px;height:33px}.pure-menu-item.buy{top:20px;right:20px}.pure-menu-item.logo{margin-top:-1px}.pure-menu-item .menu-btn-inner span{font-size:14px;padding:6px 0}}@media only screen and (max-width:1024px){#footer .cprt,#footer .cprt .info{text-align:center}}@media only screen and (max-width:980px){.pre-purchase-container .btn{font-size:1em;padding:8px 25px}.pre-purchase-container-inner .tip{font-size:12px;left:-20px}}@media only screen and (max-width:768px){footer{min-height:20rem;text-align:center}footer .logo_bz{width:90px;height:48px;background-size:cover}footer .logo_ne{width:90px;height:28px;margin:0 5px;background-size:cover}footer .cprt{width:98%}footer .cprt .info{padding:10px 0 0;display:block}footer .cprt .info p{text-align:center}#popBox{position:absolute;z-index:99999;display:none;width:100%;height:70%}.w-light-box .head{font-size:8px}.w-light-box .control a{width:30px;height:32px}#popBox .closeBtn{width:24px;height:24px}}@media only screen and (max-width:1280px) and (max-height:768px){.w-share{right:5rem}}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b, strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    max-width: 100%;
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 0
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button, input, optgroup, select, textarea {
+    color: inline-block;
+    font: inline-block;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: 700
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td, th {
+    padding: 0
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+*, :after, :before {
+    box-sizing: border-box
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif
+}
+
+ol, ul {
+    list-style-type: none
+}
+
+img {
+    height: auto
+}
+
+a {
+    text-decoration: none
+}
+
+a:link, a:visited {
+    outline: 0
+}
+
+.pure-g {
+    letter-spacing: -.31em;
+    *letter-spacing: normal;
+    *word-spacing: -.43em;
+    text-rendering: optimizespeed;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start
+}
+
+.opera-only:-o-prefocus, .pure-g {
+    word-spacing: -.43em
+}
+
+.pure-u {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto
+}
+
+.pure-u-1, .pure-u-1-1, .pure-u-1-12, .pure-u-1-2, .pure-u-1-24, .pure-u-1-3, .pure-u-1-4, .pure-u-1-5, .pure-u-1-6, .pure-u-1-8, .pure-u-10-24, .pure-u-11-12, .pure-u-11-24, .pure-u-12-24, .pure-u-13-24, .pure-u-14-24, .pure-u-15-24, .pure-u-16-24, .pure-u-17-24, .pure-u-18-24, .pure-u-19-24, .pure-u-2-24, .pure-u-2-3, .pure-u-2-5, .pure-u-20-24, .pure-u-21-24, .pure-u-22-24, .pure-u-23-24, .pure-u-24-24, .pure-u-3-24, .pure-u-3-4, .pure-u-3-5, .pure-u-3-8, .pure-u-4-24, .pure-u-4-5, .pure-u-5-12, .pure-u-5-24, .pure-u-5-5, .pure-u-5-6, .pure-u-5-8, .pure-u-6-24, .pure-u-7-12, .pure-u-7-24, .pure-u-7-8, .pure-u-8-24, .pure-u-9-24 {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto
+}
+
+.pure-u-1-24 {
+    width: 4.1667%;
+    *width: 4.1357%
+}
+
+.pure-u-1-12, .pure-u-2-24 {
+    width: 8.3333%;
+    *width: 8.3023%
+}
+
+.pure-u-1-8, .pure-u-3-24 {
+    width: 12.5%;
+    *width: 12.469%
+}
+
+.pure-u-1-6, .pure-u-4-24 {
+    width: 16.6667%;
+    *width: 16.6357%
+}
+
+.pure-u-1-5 {
+    width: 20%;
+    *width: 19.969%
+}
+
+.pure-u-5-24 {
+    width: 20.8333%;
+    *width: 20.8023%
+}
+
+.pure-u-1-4, .pure-u-6-24 {
+    width: 25%;
+    *width: 24.98%
+}
+
+.pure-u-7-24 {
+    width: 29.1667%;
+    *width: 29.1357%
+}
+
+.pure-u-1-3, .pure-u-8-24 {
+    width: 33.3333%;
+    *width: 33.3023%
+}
+
+.pure-u-3-8, .pure-u-9-24 {
+    width: 37.5%;
+    *width: 37.469%
+}
+
+.pure-u-2-5 {
+    width: 40%;
+    *width: 39.969%
+}
+
+.pure-u-10-24, .pure-u-5-12 {
+    width: 41.6667%;
+    *width: 41.6357%
+}
+
+.pure-u-11-24 {
+    width: 45.8333%;
+    *width: 45.8023%
+}
+
+.pure-u-1-2, .pure-u-12-24 {
+    width: 50%;
+    *width: 49.969%
+}
+
+.pure-u-13-24 {
+    width: 54.1667%;
+    *width: 54.1357%
+}
+
+.pure-u-14-24, .pure-u-7-12 {
+    width: 58.3333%;
+    *width: 58.3023%
+}
+
+.pure-u-3-5 {
+    width: 60%;
+    *width: 59.969%
+}
+
+.pure-u-15-24, .pure-u-5-8 {
+    width: 62.5%;
+    *width: 62.469%
+}
+
+.pure-u-16-24, .pure-u-2-3 {
+    width: 66.6667%;
+    *width: 66.6357%
+}
+
+.pure-u-17-24 {
+    width: 70.8333%;
+    *width: 70.8023%
+}
+
+.pure-u-18-24, .pure-u-3-4 {
+    width: 75%;
+    *width: 74.969%
+}
+
+.pure-u-19-24 {
+    width: 79.1667%;
+    *width: 79.1357%
+}
+
+.pure-u-4-5 {
+    width: 80%;
+    *width: 79.969%
+}
+
+.pure-u-20-24, .pure-u-5-6 {
+    width: 83.3333%;
+    *width: 83.3023%
+}
+
+.pure-u-21-24, .pure-u-7-8 {
+    width: 87.5%;
+    *width: 87.469%
+}
+
+.pure-u-11-12, .pure-u-22-24 {
+    width: 91.6667%;
+    *width: 91.6357%
+}
+
+.pure-u-23-24 {
+    width: 95.8333%;
+    *width: 95.8023%
+}
+
+.pure-u-1, .pure-u-1-1, .pure-u-24-24, .pure-u-5-5 {
+    width: 100%
+}
+
+@media screen and (min-width: 1281px) {
+    .hide-for-large, .hide-for-large-down, .hide-for-large-only, .hide-for-medium, .hide-for-medium-down, .hide-for-medium-only, .hide-for-small, .hide-for-small-down, .hide-for-small-only, .hide-for-xxlarge, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .show-for-large-up, .show-for-medium-up, .show-for-small-up, .show-for-xlarge, .show-for-xlarge-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-down {
+        display: inline-block !important
+    }
+
+    .hide-for-large-up, .hide-for-medium-up, .hide-for-small-up, .hide-for-xlarge, .hide-for-xlarge-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-down, .show-for-large, .show-for-large-down, .show-for-large-only, .show-for-medium, .show-for-medium-down, .show-for-medium-only, .show-for-small, .show-for-small-down, .show-for-small-only, .show-for-xxlarge, .show-for-xxlarge-only, .show-for-xxlarge-up {
+        display: none !important
+    }
+
+    .pure-u-xlg-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%
+    }
+
+    .pure-u-xlg-1-12, .pure-u-xlg-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%
+    }
+
+    .pure-u-xlg-1-8, .pure-u-xlg-3-24 {
+        width: 12.5%;
+        *width: 12.469%
+    }
+
+    .pure-u-xlg-1-6, .pure-u-xlg-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%
+    }
+
+    .pure-u-xlg-1-5 {
+        width: 20%;
+        *width: 19.969%
+    }
+
+    .pure-u-xlg-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%
+    }
+
+    .pure-u-xlg-1-4, .pure-u-xlg-6-24 {
+        width: 25%;
+        *width: 24.969%
+    }
+
+    .pure-u-xlg-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%
+    }
+
+    .pure-u-xlg-1-3, .pure-u-xlg-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%
+    }
+
+    .pure-u-xlg-3-8, .pure-u-xlg-9-24 {
+        width: 37.5%;
+        *width: 37.469%
+    }
+
+    .pure-u-lg-2-5 {
+        width: 40%;
+        *width: 39.969%
+    }
+
+    .pure-u-xlg-10-24, .pure-u-xlg-5-12 {
+        width: 41.6667%;
+        *width: 41.6357%
+    }
+
+    .pure-u-xlg-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%
+    }
+
+    .pure-u-xlg-1-2, .pure-u-xlg-12-24 {
+        width: 50%;
+        *width: 49.969%
+    }
+
+    .pure-u-xlg-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%
+    }
+
+    .pure-u-xlg-14-24, .pure-u-xlg-7-12 {
+        width: 58.3333%;
+        *width: 58.3023%
+    }
+
+    .pure-u-xlg-3-5 {
+        width: 60%;
+        *width: 59.969%
+    }
+
+    .pure-u-xlg-15-24, .pure-u-xlg-5-8 {
+        width: 62.5%;
+        *width: 62.469%
+    }
+
+    .pure-u-xlg-16-24, .pure-u-xlg-2-3 {
+        width: 66.6667%;
+        *width: 66.6357%
+    }
+
+    .pure-u-xlg-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%
+    }
+
+    .pure-u-xlg-18-24, .pure-u-xlg-3-4 {
+        width: 75%;
+        *width: 74.969%
+    }
+
+    .pure-u-xlg-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%
+    }
+
+    .pure-u-xlg-4-5 {
+        width: 80%;
+        *width: 79.969%
+    }
+
+    .pure-u-xlg-20-24, .pure-u-xlg-5-6 {
+        width: 83.3333%;
+        *width: 83.3023%
+    }
+
+    .pure-u-xlg-21-24, .pure-u-xlg-7-8 {
+        width: 87.5%;
+        *width: 87.469%
+    }
+
+    .pure-u-xlg-11-12, .pure-u-xlg-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%
+    }
+
+    .pure-u-xlg-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%
+    }
+
+    .pure-u-xlg-1, .pure-u-xlg-1-1, .pure-u-xlg-24-24, .pure-u-xlg-5-5 {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .hide-for-medium, .hide-for-medium-down, .hide-for-medium-only, .hide-for-small, .hide-for-small-down, .hide-for-small-only, .hide-for-xlarge, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .show-for-large, .show-for-large-down, .show-for-large-only, .show-for-large-up, .show-for-medium-up, .show-for-small-up, .show-for-xlarge-down, .show-for-xxlarge-down {
+        display: inline-block !important
+    }
+
+    .hide-for-large, .hide-for-large-down, .hide-for-large-only, .hide-for-large-up, .hide-for-medium-up, .hide-for-small-up, .hide-for-xlarge-down, .hide-for-xxlarge-down, .show-for-medium, .show-for-medium-down, .show-for-medium-only, .show-for-small, .show-for-small-down, .show-for-small-only, .show-for-xlarge, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge, .show-for-xxlarge-only, .show-for-xxlarge-up {
+        display: none !important
+    }
+
+    .pure-u-lg-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%
+    }
+
+    .pure-u-lg-1-12, .pure-u-lg-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%
+    }
+
+    .pure-u-lg-1-8, .pure-u-lg-3-24 {
+        width: 12.5%;
+        *width: 12.469%
+    }
+
+    .pure-u-lg-1-6, .pure-u-lg-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%
+    }
+
+    .pure-u-lg-1-5 {
+        width: 20%;
+        *width: 19.969%
+    }
+
+    .pure-u-lg-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%
+    }
+
+    .pure-u-lg-1-4, .pure-u-lg-6-24 {
+        width: 25%;
+        *width: 24.969%
+    }
+
+    .pure-u-lg-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%
+    }
+
+    .pure-u-lg-1-3, .pure-u-lg-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%
+    }
+
+    .pure-u-lg-3-8, .pure-u-lg-9-24 {
+        width: 37.5%;
+        *width: 37.469%
+    }
+
+    .pure-u-lg-2-5 {
+        width: 40%;
+        *width: 39.969%
+    }
+
+    .pure-u-lg-10-24, .pure-u-lg-5-12 {
+        width: 41.6667%;
+        *width: 41.6357%
+    }
+
+    .pure-u-lg-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%
+    }
+
+    .pure-u-lg-1-2, .pure-u-lg-12-24 {
+        width: 50%;
+        *width: 49.969%
+    }
+
+    .pure-u-lg-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%
+    }
+
+    .pure-u-lg-14-24, .pure-u-lg-7-12 {
+        width: 58.3333%;
+        *width: 58.3023%
+    }
+
+    .pure-u-lg-3-5 {
+        width: 60%;
+        *width: 59.969%
+    }
+
+    .pure-u-lg-15-24, .pure-u-lg-5-8 {
+        width: 62.5%;
+        *width: 62.469%
+    }
+
+    .pure-u-lg-16-24, .pure-u-lg-2-3 {
+        width: 66.6667%;
+        *width: 66.6357%
+    }
+
+    .pure-u-lg-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%
+    }
+
+    .pure-u-lg-18-24, .pure-u-lg-3-4 {
+        width: 75%;
+        *width: 74.969%
+    }
+
+    .pure-u-lg-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%
+    }
+
+    .pure-u-lg-4-5 {
+        width: 80%;
+        *width: 79.969%
+    }
+
+    .pure-u-lg-20-24, .pure-u-lg-5-6 {
+        width: 83.3333%;
+        *width: 83.3023%
+    }
+
+    .pure-u-lg-21-24, .pure-u-lg-7-8 {
+        width: 87.5%;
+        *width: 87.469%
+    }
+
+    .pure-u-lg-11-12, .pure-u-lg-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%
+    }
+
+    .pure-u-lg-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%
+    }
+
+    .pure-u-lg-1, .pure-u-lg-1-1, .pure-u-lg-24-24, .pure-u-lg-5-5 {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hide-for-large, .hide-for-large-only, .hide-for-large-up, .hide-for-small, .hide-for-small-down, .hide-for-small-only, .hide-for-xlarge, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .show-for-large-down, .show-for-medium, .show-for-medium-down, .show-for-medium-only, .show-for-medium-up, .show-for-small-up, .show-for-xlarge-down, .show-for-xxlarge-down {
+        display: inline-block !important
+    }
+
+    .hide-for-large-down, .hide-for-medium, .hide-for-medium-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-small-up, .hide-for-xlarge-down, .hide-for-xxlarge-down, .show-for-large, .show-for-large-only, .show-for-large-up, .show-for-small, .show-for-small-down, .show-for-small-only, .show-for-xlarge, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge, .show-for-xxlarge-only, .show-for-xxlarge-up {
+        display: none !important
+    }
+
+    .pure-u-md-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%
+    }
+
+    .pure-u-md-1-12, .pure-u-md-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%
+    }
+
+    .pure-u-md-1-8, .pure-u-md-3-24 {
+        width: 12.5%;
+        *width: 12.469%
+    }
+
+    .pure-u-md-1-6, .pure-u-md-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%
+    }
+
+    .pure-u-md-1-5 {
+        width: 20%;
+        *width: 19.969%
+    }
+
+    .pure-u-md-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%
+    }
+
+    .pure-u-md-1-4, .pure-u-md-6-24 {
+        width: 25%;
+        *width: 24.969%
+    }
+
+    .pure-u-md-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%
+    }
+
+    .pure-u-md-1-3, .pure-u-md-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%
+    }
+
+    .pure-u-md-3-8, .pure-u-md-9-24 {
+        width: 37.5%;
+        *width: 37.469%
+    }
+
+    .pure-u-md-2-5 {
+        width: 40%;
+        *width: 39.969%
+    }
+
+    .pure-u-md-10-24, .pure-u-md-5-12 {
+        width: 41.6667%;
+        *width: 41.6357%
+    }
+
+    .pure-u-md-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%
+    }
+
+    .pure-u-md-1-2, .pure-u-md-12-24 {
+        width: 50%;
+        *width: 49.969%
+    }
+
+    .pure-u-md-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%
+    }
+
+    .pure-u-md-14-24, .pure-u-md-7-12 {
+        width: 58.3333%;
+        *width: 58.3023%
+    }
+
+    .pure-u-md-3-5 {
+        width: 60%;
+        *width: 59.969%
+    }
+
+    .pure-u-md-15-24, .pure-u-md-5-8 {
+        width: 62.5%;
+        *width: 62.469%
+    }
+
+    .pure-u-md-16-24, .pure-u-md-2-3 {
+        width: 66.6667%;
+        *width: 66.6357%
+    }
+
+    .pure-u-md-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%
+    }
+
+    .pure-u-md-18-24, .pure-u-md-3-4 {
+        width: 75%;
+        *width: 74.969%
+    }
+
+    .pure-u-md-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%
+    }
+
+    .pure-u-md-4-5 {
+        width: 80%;
+        *width: 79.969%
+    }
+
+    .pure-u-md-20-24, .pure-u-md-5-6 {
+        width: 83.3333%;
+        *width: 83.3023%
+    }
+
+    .pure-u-md-21-24, .pure-u-md-7-8 {
+        width: 87.5%;
+        *width: 87.469%
+    }
+
+    .pure-u-md-11-12, .pure-u-md-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%
+    }
+
+    .pure-u-md-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%
+    }
+
+    .pure-u-md-1, .pure-u-md-1-1, .pure-u-md-24-24, .pure-u-md-5-5 {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hide-for-large, .hide-for-large-only, .hide-for-large-up, .hide-for-medium, .hide-for-medium-only, .hide-for-medium-up, .hide-for-xlarge, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .show-for-large-down, .show-for-medium-down, .show-for-small, .show-for-small-down, .show-for-small-only, .show-for-small-up, .show-for-xlarge-down, .show-for-xxlarge-down {
+        display: inline-block !important
+    }
+
+    .hide-for-large-down, .hide-for-medium-down, .hide-for-small, .hide-for-small-down, .hide-for-small-only, .hide-for-small-up, .hide-for-xlarge-down, .hide-for-xxlarge-down, .show-for-large, .show-for-large-only, .show-for-large-up, .show-for-medium, .show-for-medium-only, .show-for-medium-up, .show-for-xlarge, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge, .show-for-xxlarge-only, .show-for-xxlarge-up {
+        display: none !important
+    }
+
+    .pure-u-sm-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%
+    }
+
+    .pure-u-sm-1-12, .pure-u-sm-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%
+    }
+
+    .pure-u-sm-1-8, .pure-u-sm-3-24 {
+        width: 12.5%;
+        *width: 12.469%
+    }
+
+    .pure-u-sm-1-6, .pure-u-sm-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%
+    }
+
+    .pure-u-sm-1-5 {
+        width: 20%;
+        *width: 19.969%
+    }
+
+    .pure-u-sm-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%
+    }
+
+    .pure-u-sm-1-4, .pure-u-sm-6-24 {
+        width: 25%;
+        *width: 24.969%
+    }
+
+    .pure-u-sm-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%
+    }
+
+    .pure-u-sm-1-3, .pure-u-sm-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%
+    }
+
+    .pure-u-sm-3-8, .pure-u-sm-9-24 {
+        width: 37.5%;
+        *width: 37.469%
+    }
+
+    .pure-u-sm-2-5 {
+        width: 40%;
+        *width: 39.969%
+    }
+
+    .pure-u-sm-10-24, .pure-u-sm-5-12 {
+        width: 41.6667%;
+        *width: 41.6357%
+    }
+
+    .pure-u-sm-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%
+    }
+
+    .pure-u-sm-1-2, .pure-u-sm-12-24 {
+        width: 50%;
+        *width: 49.969%
+    }
+
+    .pure-u-sm-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%
+    }
+
+    .pure-u-sm-14-24, .pure-u-sm-7-12 {
+        width: 58.3333%;
+        *width: 58.3023%
+    }
+
+    .pure-u-sm-3-5 {
+        width: 60%;
+        *width: 59.969%
+    }
+
+    .pure-u-sm-15-24, .pure-u-sm-5-8 {
+        width: 62.5%;
+        *width: 62.469%
+    }
+
+    .pure-u-sm-16-24, .pure-u-sm-2-3 {
+        width: 66.6667%;
+        *width: 66.6357%
+    }
+
+    .pure-u-sm-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%
+    }
+
+    .pure-u-sm-18-24, .pure-u-sm-3-4 {
+        width: 75%;
+        *width: 74.969%
+    }
+
+    .pure-u-sm-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%
+    }
+
+    .pure-u-sm-4-5 {
+        width: 80%;
+        *width: 79.969%
+    }
+
+    .pure-u-sm-20-24, .pure-u-sm-5-6 {
+        width: 83.3333%;
+        *width: 83.3023%
+    }
+
+    .pure-u-sm-21-24, .pure-u-sm-7-8 {
+        width: 87.5%;
+        *width: 87.469%
+    }
+
+    .pure-u-sm-11-12, .pure-u-sm-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%
+    }
+
+    .pure-u-sm-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%
+    }
+
+    .pure-u-sm-1, .pure-u-sm-1-1, .pure-u-sm-24-24, .pure-u-sm-5-5 {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pure-u-xsm-1-24 {
+        width: 4.1667%;
+        *width: 4.1357%
+    }
+
+    .pure-u-xsm-1-12, .pure-u-xsm-2-24 {
+        width: 8.3333%;
+        *width: 8.3023%
+    }
+
+    .pure-u-xsm-1-8, .pure-u-xsm-3-24 {
+        width: 12.5%;
+        *width: 12.469%
+    }
+
+    .pure-u-xsm-1-6, .pure-u-xsm-4-24 {
+        width: 16.6667%;
+        *width: 16.6357%
+    }
+
+    .pure-u-xsm-1-5 {
+        width: 20%;
+        *width: 19.969%
+    }
+
+    .pure-u-xsm-5-24 {
+        width: 20.8333%;
+        *width: 20.8023%
+    }
+
+    .pure-u-xsm-1-4, .pure-u-xsm-6-24 {
+        width: 25%;
+        *width: 24.969%
+    }
+
+    .pure-u-xsm-7-24 {
+        width: 29.1667%;
+        *width: 29.1357%
+    }
+
+    .pure-u-xsm-1-3, .pure-u-xsm-8-24 {
+        width: 33.3333%;
+        *width: 33.3023%
+    }
+
+    .pure-u-xsm-3-8, .pure-u-xsm-9-24 {
+        width: 37.5%;
+        *width: 37.469%
+    }
+
+    .pure-u-xsm-2-5 {
+        width: 40%;
+        *width: 39.969%
+    }
+
+    .pure-u-xsm-10-24, .pure-u-xsm-5-12 {
+        width: 41.6667%;
+        *width: 41.6357%
+    }
+
+    .pure-u-xsm-11-24 {
+        width: 45.8333%;
+        *width: 45.8023%
+    }
+
+    .pure-u-xsm-1-2, .pure-u-xsm-12-24 {
+        width: 50%;
+        *width: 49.969%
+    }
+
+    .pure-u-xsm-13-24 {
+        width: 54.1667%;
+        *width: 54.1357%
+    }
+
+    .pure-u-xsm-14-24, .pure-u-xsm-7-12 {
+        width: 58.3333%;
+        *width: 58.3023%
+    }
+
+    .pure-u-xsm-3-5 {
+        width: 60%;
+        *width: 59.969%
+    }
+
+    .pure-u-xsm-15-24, .pure-u-xsm-5-8 {
+        width: 62.5%;
+        *width: 62.469%
+    }
+
+    .pure-u-xsm-16-24, .pure-u-xsm-2-3 {
+        width: 66.6667%;
+        *width: 66.6357%
+    }
+
+    .pure-u-xsm-17-24 {
+        width: 70.8333%;
+        *width: 70.8023%
+    }
+
+    .pure-u-xsm-18-24, .pure-u-xsm-3-4 {
+        width: 75%;
+        *width: 74.969%
+    }
+
+    .pure-u-xsm-19-24 {
+        width: 79.1667%;
+        *width: 79.1357%
+    }
+
+    .pure-u-xsm-4-5 {
+        width: 80%;
+        *width: 79.969%
+    }
+
+    .pure-u-xsm-20-24, .pure-u-xsm-5-6 {
+        width: 83.3333%;
+        *width: 83.3023%
+    }
+
+    .pure-u-xsm-21-24, .pure-u-xsm-7-8 {
+        width: 87.5%;
+        *width: 87.469%
+    }
+
+    .pure-u-xsm-11-12, .pure-u-xsm-22-24 {
+        width: 91.6667%;
+        *width: 91.6357%
+    }
+
+    .pure-u-xsm-23-24 {
+        width: 95.8333%;
+        *width: 95.8023%
+    }
+
+    .pure-u-xsm-1, .pure-u-xsm-1-1, .pure-u-xsm-24-24, .pure-u-xsm-5-5 {
+        width: 100%
+    }
+}
+
+.pure-menu {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.pure-menu-fixed {
+    left: 0;
+    top: 0;
+    z-index: 3
+}
+
+.pure-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.pure-menu-item {
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+
+.pure-menu-heading, .pure-menu-link {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.pure-menu-horizontal {
+    width: 100%;
+    white-space: nowrap
+}
+
+.pure-menu-horizontal .pure-menu-list {
+    display: inline-block;
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/bg-top.png);
+    -webkit-background-size: contain;
+    -ms-background-size: contain;
+    background-size: contain
+}
+
+.pure-menu-horizontal .pure-menu-heading, .pure-menu-horizontal .pure-menu-item, .pure-menu-horizontal .pure-menu-separator {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle
+}
+
+.pure-menu-separator {
+    background-color: #ccc;
+    height: 1px;
+    margin: .3em 0
+}
+
+.pure-menu-horizontal .pure-menu-separator {
+    width: 1px;
+    height: 1.3em;
+    margin: 0 .3em
+}
+
+.pure-menu-heading {
+    text-transform: uppercase;
+    color: #565d64
+}
+
+.pure-menu-link {
+    color: #777
+}
+
+.pure-menu-disabled, .pure-menu-heading, .pure-menu-link {
+    padding: .5em 1em
+}
+
+.pure-menu-disabled {
+    opacity: .5
+}
+
+.pure-menu-disabled .pure-menu-link:hover {
+    background-color: transparent
+}
+
+.pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
+    background-color: #eee
+}
+
+.pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {
+    color: #000
+}
+
+.f-center {
+    text-align: center
+}
+
+.f-left {
+    text-align: left
+}
+
+.f-right {
+    text-align: right
+}
+
+.f-vm {
+    vertical-align: middle
+}
+
+body, html {
+    overflow-x: hidden
+}
+
+body {
+    color: #fff;
+    background: #102e56
+}
+
+a {
+    transition: color 200ms ease 0s;
+    color: #ffc70e
+}
+
+a:focus, a:hover {
+    color: #fff
+}
+
+.shadow-text, a, h1, h2, h3, h4, h5, h6, p, span {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+}
+
+.clearFix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: '.'
+}
+
+.clearFix {
+    display: block;
+    *display: inline-block
+}
+
+* html .clearFix {
+    height: 1%
+}
+
+.wrapper {
+    position: relative;
+    -webkit-transition: all .6s ease 0s;
+    transition: all .6s ease 0s
+}
+
+.wrapper .body .section {
+    padding: 0
+}
+
+.g-wrap-limit {
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 1920px;
+    margin: 0 auto
+}
+
+.btn {
+    display: inline-block;
+    padding: .9rem 3rem;
+    transition: none;
+    -webkit-transform: skew(-.25rad);
+    -ms-transform: skew(-.25rad);
+    transform: skew(-.25rad);
+    text-align: center
+}
+
+.btn span {
+    display: inline-block;
+    -webkit-transform: skew(.25rad);
+    -ms-transform: skew(.25rad);
+    transform: skew(.25rad);
+    text-transform: uppercase;
+    text-shadow: none
+}
+
+.btn-sm {
+    font-size: 1.2em;
+    border-radius: .2rem
+}
+
+.btn-md {
+    font-size: 1.6rem;
+    padding: .8rem 4rem;
+    border-radius: .7rem
+}
+
+.btn-lg {
+    font-size: 2.4rem;
+    border-radius: .4rem
+}
+
+.btn-primary {
+    color: #511616;
+    border: 1px solid #fdda75;
+    background-color: #ffc70e;
+    box-shadow: inset 0 0 10px 5px rgba(237, 186, 14, .6)
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #00c3ff
+}
+
+.btn-hollow {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.btn-semi-hollow {
+    color: #fff;
+    border: 1px solid #00c3ff;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.btn-semi-hollow.active:hover, .btn.active, .btn:hover {
+    color: #511616;
+    border-color: #fff;
+    background: #fff;
+    box-shadow: none
+}
+
+.btn-semi-hollow:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 96%;
+    height: 84%;
+    margin: auto;
+    content: '';
+    border-radius: .4rem;
+    background-color: rgba(0, 195, 255, .5)
+}
+
+.btn-semi-hollow.active {
+    color: #fff;
+    border-color: #00c3ff;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.btn-semi-hollow.active:before {
+    background-color: rgba(0, 195, 255, .7)
+}
+
+.btn-semi-hollow:hover:before {
+    display: none
+}
+
+.btn-primary-semi-hollow {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ffc70e;
+    color: #511616
+}
+
+.btn-primary-semi-hollow:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 96%;
+    height: 84%;
+    border-radius: 4px;
+    background-color: #ffc70e
+}
+
+.btn-primary-semi-hollow.active {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #ffc70e;
+    color: #511616
+}
+
+.btn-primary-semi-hollow.active:before {
+    background-color: #ffc70e
+}
+
+.btn-primary-semi-hollow:hover:before {
+    display: none
+}
+
+.head {
+    font-size: 16px;
+    position: relative;
+    z-index: 400
+}
+
+.pure-menu-fixed {
+    position: absolute
+}
+
+.pure-menu-list {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%
+}
+
+.pure-menu-item {
+    z-index: 100;
+    width: 13.6%;
+    max-width: 150px;
+    *margin: 0 2px;
+    position: relative
+}
+
+.pure-menu-item.home {
+    height: 38px;
+    left: -30px;
+    position: absolute;
+    top: 37px
+}
+
+.pure-menu-item.buy {
+    right: 50px;
+    top: 30px;
+    height: auto;
+    position: absolute
+}
+
+.pure-menu-item.home .menu-btn, .pure-menu-item.home .menu-btn-inner {
+    color: #511616;
+    border-color: #fdda75;
+    background: #ffc70e
+}
+
+.pure-menu-item.home .menu-btn-inner:before {
+    background-color: #ffc70e
+}
+
+.pure-menu-item.home .menu-btn.active .menu-btn-inner span {
+    text-shadow: none
+}
+
+.pure-menu-item a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.pure-menu-item .menu-btn {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: skew(-.25rad);
+    -ms-transform: skew(-.25rad);
+    transform: skew(-.25rad);
+    color: #fff;
+    border: 1px solid #10ade7;
+    border: 1px solid #00c3ff;
+    border-radius: 7px;
+    background-color: #10ade7;
+    background-color: rgba(0, 195, 255, 0);
+    *background-color: #10ade7;
+    *border: 1px solid #10ade7
+}
+
+.pure-menu-item .menu-btn-inner:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 84%;
+    margin: auto;
+    content: '';
+    border-radius: 4px;
+    background-color: rgba(0, 195, 255, .5)
+}
+
+.pure-menu-item .menu-btn-inner:hover:before {
+    display: none
+}
+
+.pure-menu-item .menu-btn-inner span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 7px 0;
+    cursor: pointer;
+    -webkit-transform: skew(.25rad);
+    -ms-transform: skew(.25rad);
+    transform: skew(.25rad);
+    text-shadow: none
+}
+
+.pure-menu-item .menu-btn:hover, .pure-menu-item .menu-btn:hover .menu-btn-inner {
+    color: #511616;
+    border-color: #fff;
+    background: #fff
+}
+
+.pre-purchase-container-inner {
+    position: relative
+}
+
+.pre-purchase-container-inner .tip {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 0 3px #000
+}
+
+.pre-purchase-container .btn {
+    font-size: 1.4em;
+    padding: 15px 50px
+}
+
+.pure-menu-item.logo {
+    width: 156px;
+    height: 108px;
+    margin-top: 3px;
+    margin-right: -22px;
+    margin-left: -25px;
+    background: url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png) no-repeat top center;
+    background-size: contain
+}
+
+.pure-menu-item .menu-btn.active .menu-btn-inner span {
+    text-shadow: 0 0 20px #fff, 0 0 20px rgba(22, 143, 231, .85), 0 0 10px #c7f2ff, 0 0 10px #3cadff, 0 0 5px #3cadff, 0 0 5px #3cadff
+}
+
+.pure-menu-item .menu-btn.active:hover .menu-btn-inner span {
+    text-shadow: none
+}
+
+.pure-menu .menu-main-pin .pin, .pure-menu .pure-menu-list {
+    z-index: 400;
+    -webkit-transition: top 300ms ease;
+    transition: top 300ms ease
+}
+
+.pure-menu .pure-menu-list {
+    top: 0
+}
+
+.pure-menu .menu-main-pin .pin {
+    position: fixed;
+    z-index: 1000;
+    top: -28px;
+    right: 0;
+    left: 50%;
+    width: 95px;
+    height: 28px;
+    margin-left: -48px;
+    cursor: pointer;
+    background: url(http://overwatch.nos.netease.com/1/images/layout/main-menu-pin.png) no-repeat center bottom
+}
+
+.pure-menu.menu-hidden .pure-menu-list {
+    top: -150px
+}
+
+.pure-menu.menu-hidden .menu-main-pin .pin {
+    top: 0
+}
+
+.side-menu {
+    font-size: 46px;
+    position: fixed;
+    z-index: 400;
+    top: 50%;
+    left: 100%;
+    margin-top: -1.5em;
+    margin-left: 46px
+}
+
+.side-menu.hidden li {
+    left: -92px
+}
+
+.side-menu.hidden li:hover {
+    left: -100%
+}
+
+.side-menu li {
+    font-size: 16px;
+    position: relative;
+    left: -100%;
+    display: block;
+    width: 100%;
+    min-width: 110px;
+    margin: 3px 0;
+    margin-right: 46px;
+    padding: 0;
+    transition: left 100ms ease;
+    text-align: left;
+    vertical-align: middle;
+    color: #fff;
+    background: #00c3ff
+}
+
+.side-menu li a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    margin-left: 1px;
+    padding: 4px 5px;
+    text-align: left;
+    white-space: nowrap;
+    color: #fff
+}
+
+.side-menu li i {
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: skew(.25rad);
+    -ms-transform: skew(.25rad);
+    transform: skew(.25rad);
+    vertical-align: middle;
+    background: url(http://overwatch.nos.netease.com/1/images/layout/side-menu-icon.png) no-repeat
+}
+
+.side-menu li i.icon-videos {
+    background-position: -14px -12px
+}
+
+.side-menu li.active i.icon-videos, .side-menu li:hover i.icon-videos {
+    background-position: -14px -56px
+}
+
+.side-menu li i.icon-overwatch {
+    background-position: -74px -12px
+}
+
+.side-menu li.active i.icon-overwatch, .side-menu li:hover i.icon-overwatch {
+    background-position: -74px -56px
+}
+
+.side-menu li i.icon-heroes {
+    background-position: -134px -12px
+}
+
+.side-menu li.active i.icon-heroes, .side-menu li:hover i.icon-heroes {
+    background-position: -134px -56px
+}
+
+.side-menu li i.icon-roles {
+    background-position: -190px -12px
+}
+
+.side-menu li.active i.icon-roles, .side-menu li:hover i.icon-roles {
+    background-position: -190px -56px
+}
+
+.side-menu li i.icon-objectives {
+    background-position: -244px -12px
+}
+
+.side-menu li.active i.icon-objectives, .side-menu li:hover i.icon-objectives {
+    background-position: -244px -56px
+}
+
+.side-menu li i.icon-screenshots {
+    background-position: -297px -12px
+}
+
+.side-menu li.active i.icon-screenshots, .side-menu li:hover i.icon-screenshots {
+    background-position: -297px -56px
+}
+
+.side-menu li i.icon-artwork {
+    background-position: -347px -12px
+}
+
+.side-menu li.active i.icon-artwork, .side-menu li:hover i.icon-artwork {
+    background-position: -347px -56px
+}
+
+.side-menu li i.icon-wallpapers {
+    background-position: -401px -12px
+}
+
+.side-menu li.active i.icon-wallpapers, .side-menu li:hover i.icon-wallpapers {
+    background-position: -401px -56px
+}
+
+.side-menu li i.icon-pdf {
+    background-position: -452px -12px
+}
+
+.side-menu li.active i.icon-pdf, .side-menu li:hover i.icon-pdf {
+    background-position: -452px -56px
+}
+
+.side-menu li i.icon-hero {
+    background-position: 0 0
+}
+
+.side-menu li.active i.icon-hero, .side-menu li:hover i.icon-hero {
+    background-position: 0 -45px
+}
+
+.side-menu li i.icon-abilities {
+    background-image: url(http://overwatch.nos.netease.com/1/images/heroes/detail/right-icon/rightnav-abilities.png);
+    background-position: 0 0
+}
+
+.side-menu li.active i.icon-abilities, .side-menu li:hover i.icon-abilities {
+    background-position: 0 -45px
+}
+
+.side-menu li i.icon-story {
+    background-image: url(http://overwatch.nos.netease.com/1/images/heroes/detail/right-icon/rightnav-story.png);
+    background-position: 0 0
+}
+
+.side-menu li.active i.icon-story, .side-menu li:hover i.icon-story {
+    background-position: 0 -45px
+}
+
+.side-menu li span {
+    font-size: .9em;
+    display: inline-block;
+    padding: .5em;
+    -webkit-transform: skew(.25rad);
+    -ms-transform: skew(.25rad);
+    transform: skew(.25rad);
+    text-transform: uppercase;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    text-shadow: none
+}
+
+.side-menu li.active, .side-menu li:hover {
+    opacity: 1
+}
+
+.side-menu li.active a, .side-menu li:hover a {
+    color: #231f20
+}
+
+.side-menu li.active span, .side-menu li:hover span {
+    border-left: 1px solid rgba(35, 31, 32, .1)
+}
+
+.icon {
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/icon-sprit.png)
+}
+
+.nav {
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background-color: #081b2b
+}
+
+.nav .logo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 62px;
+    height: 62px;
+    margin: auto;
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png);
+    background-size: 150%
+}
+
+.nav .nav-btn {
+    float: left;
+    width: auto;
+    padding: 8px 10px;
+    cursor: pointer
+}
+
+.nav .nav-btn.burger .burger-nav {
+    width: 44px;
+    height: 44px;
+    float: left;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/icon-orange-menu.png);
+    background-size: 44px auto
+}
+
+.menu.menu-main {
+    position: absolute;
+    z-index: 200;
+    top: 50px;
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-align: center;
+    background: rgba(8, 27, 43, .9)
+}
+
+.menu.menu-main .menu-item {
+    display: inline-block;
+    width: 25%;
+    max-width: 7.5em;
+    margin: 0 -3px
+}
+
+.menu.menu-main .menu-item a {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 5px;
+    -webkit-transform: skew(-.25rad);
+    -ms-transform: skew(-.25rad);
+    transform: skew(-.25rad);
+    color: #fff
+}
+
+.menu.menu-main .menu-item a.active {
+    border-bottom: 2px solid #00c3ff
+}
+
+.menu.menu-main .menu-item a:before {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    margin: auto;
+    content: '';
+    border-left: 2px solid #0b4772;
+    border-radius: 0
+}
+
+.menu.menu-main .menu-item:first-child a:before {
+    border-left: none
+}
+
+.menu.menu-main .menu-item a.active span {
+    text-shadow: 0 0 20px #008fff, 0 0 5px #209dff, 0 0 8px #209dff, 0 0 30px #008fff, 0 0 40px #008fff
+}
+
+.menu.menu-main .menu-item a span {
+    display: block;
+    -webkit-transform: skew(.25rad);
+    -ms-transform: skew(.25rad);
+    transform: skew(.25rad);
+    text-transform: uppercase
+}
+
+.nav-burger-content-wrap {
+    position: absolute;
+    z-index: 1000000;
+    bottom: 0;
+    right: 100%;
+    height: 100%;
+    width: 80%;
+    background-color: rgba(8, 27, 43, .98)
+}
+
+.nav-burger-content-wrap .nav-burger-content {
+    font-size: 16px;
+    position: relative;
+    padding-top: 99px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/overwatch-burger-header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 255px
+}
+
+.nav-burger-content-wrap .menu-main {
+    text-align: left
+}
+
+.nav-burger-content-wrap .menu-main .menu-item {
+    text-transform: uppercase;
+    border-top: none;
+    border-bottom: 1px solid #0b3146
+}
+
+.nav-burger-content-wrap .menu-main .menu-item:first-child {
+    border-top: 1px solid #0b3146
+}
+
+.nav-burger-content-wrap .menu-main .menu-item a {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 5rem
+}
+
+.nav-burger-content-wrap .menu-main .menu-item a span {
+    display: table-cell;
+    padding-left: 10%;
+    vertical-align: middle;
+    color: #fff
+}
+
+.nav-burger-content-wrap .menu-main .menu-item a .icon {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    bottom: 0;
+    margin: auto
+}
+
+i.icon.double-arrow {
+    width: 34px;
+    height: 34px
+}
+
+.nav-burger-content-wrap .menu-main .menu-item a.active, .nav-burger-content-wrap .menu-main .menu-item a:active {
+    border-left: 3px solid #00c3ff;
+    background-color: rgba(0, 195, 255, .04)
+}
+
+.nav-burger-content-wrap .exit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em 20px 16px .5em;
+    cursor: pointer
+}
+
+.nav-burger-content-wrap .exit .icon {
+    width: 20px;
+    height: 20px;
+    opacity: .3
+}
+
+.icon {
+    display: block;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+i.icon {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle
+}
+
+@media only screen and (max-width: 105em) {
+    i.icon {
+        height: 34px;
+        width: 34px
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    i.icon {
+        height: 34px;
+        width: 34px
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    i.icon {
+        height: 26px;
+        width: 26px
+    }
+}
+
+@media only screen and (max-width: 20em) {
+    i.icon {
+        height: 18px;
+        width: 18px
+    }
+}
+
+i.icon.hero-card {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/icon-stats01.png)
+}
+
+i.icon.briefcase {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/icon-stats02.png)
+}
+
+i.icon.globe {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/icon-stats03.png)
+}
+
+i.icon.badge {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/icon-stats04.png)
+}
+
+i.icon.double-arrow {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/arrow-right.png)
+}
+
+i.icon.double-arrow-left {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/arrow-left.png)
+}
+
+i.icon.double-arrow-right {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/arrow-right.png)
+}
+
+i.icon.double-arrow-down {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/arrow-bottom.png)
+}
+
+i.icon.double-arrow-yellow {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/arrow-yellow.png)
+}
+
+i.icon.x {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/exit.png)
+}
+
+i.icon.warning-icon {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/icon-error-lg.png)
+}
+
+i.icon.role-offense {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/role-offense.png);
+    top: -3px
+}
+
+i.icon.role-defense {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/role-defense.png);
+    top: -2px
+}
+
+i.icon.role-support {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/role-support.png);
+    top: -2px
+}
+
+i.icon.role-tank {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/role-tank.png);
+    top: -2px
+}
+
+i.icon.logo {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/game.png);
+    height: 100px;
+    width: 100px
+}
+
+i.icon.franchise-d3 {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/d3.png)
+}
+
+i.icon.franchise-d3-mono {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/d3-mono.png)
+}
+
+i.icon.franchise-hots {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/hots.png)
+}
+
+i.icon.franchise-hots-mono {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/hots-mono.png)
+}
+
+i.icon.franchise-hs {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/hs.png)
+}
+
+i.icon.franchise-hs-mono {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/hs-mono.png)
+}
+
+i.icon.franchise-sc2 {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/sc2.png)
+}
+
+i.icon.franchise-sc2-mono {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/sc2-mono.png)
+}
+
+i.icon.franchise-wow {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/wow.png)
+}
+
+i.icon.franchise-wow-mono {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/wow-mono.png)
+}
+
+i.icon.franchise-ow {
+    background-image: url(http://overwatch.nos.netease.com/1/images/icon/ow.png)
+}
+
+i.icon.cross {
+    background-image: url(http://overwatch.nos.netease.com/1/images/buy/cross.png)
+}
+
+i[class*=" icon-"], i[class^=icon-] {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    width: 1em;
+    height: 1em;
+    overflow: hidden
+}
+
+.wrapper.nav-burger-content-wrap-out {
+    -webkit-transform: translateX(80%);
+    transform: translateX(80%)
+}
+
+.nav-burger-content-wrap .btn-lg {
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px auto
+}
+
+.ui-breadcrumbs {
+    position: relative;
+    z-index: 11;
+    padding: 1rem 0 2rem;
+    text-align: left;
+    color: #ffc70e
+}
+
+.ui-breadcrumbs a {
+    display: inline-block;
+    color: #ffc70e;
+    border-bottom: 1px dotted #ffc70e
+}
+
+.ui-breadcrumbs a:hover {
+    color: #fff;
+    border-bottom: 1px dotted #fff
+}
+
+.icon_bread {
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    vertical-align: middle;
+    background-position: -11px -12px
+}
+
+.ui-breadcrumbs a.active {
+    cursor: default;
+    color: #fff;
+    border-bottom: medium none
+}
+
+.beta {
+    margin: 0 auto;
+    text-align: center
+}
+
+.beta a {
+    font-size: 30px;
+    padding: 15px 60px;
+    margin: 80px auto;
+    color: #511616
+}
+
+#footer {
+    position: relative;
+    font-size: 12px;
+    width: auto;
+    margin: 0;
+    background: #102e56
+}
+
+#footer .footerWrap {
+    padding: 40px 0 0;
+    margin-bottom: 40px;
+    border-top: 1px solid rgba(34, 117, 187, .5)
+}
+
+#footer .logo_bz {
+    display: inline-block;
+    overflow: hidden;
+    width: 140px;
+    height: 80px;
+    vertical-align: middle;
+    background: url(http://overwatch.nos.netease.com/1/images/layout/blizzard.png) no-repeat 0 0
+}
+
+#footer .logo_ne {
+    display: inline-block;
+    overflow: hidden;
+    width: 105px;
+    height: 33px;
+    margin: 34px 0 0 20px;
+    vertical-align: middle;
+    background: url(http://overwatch.nos.netease.com/1/images/layout/logo_ne.png) no-repeat 0 0
+}
+
+#footer .cprt {
+    max-width: 1000px;
+    margin: 50px auto 8px;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #184f85
+}
+
+#footer .cprt .info ul li {
+    color: #ccc;
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 10px
+}
+
+#footer .cprt .info ul li a {
+    color: #fff;
+    padding-right: 10px
+}
+
+#footer .footerWrap a {
+    text-decoration: none;
+    color: #2275bb
+}
+
+#footer .footerWrap a:hover {
+    color: #fefefe
+}
+
+#footer .tips {
+    text-align: center;
+    color: #606981
+}
+
+#footer .cprt .info {
+    position: relative;
+    display: inline-block;
+    padding: 20px 0 0 10%;
+    text-align: left;
+    vertical-align: middle;
+    color: #2275bb;
+    *display: inline;
+    *zoom: 1
+}
+
+#footer .integrity {
+    padding-top: 15px
+}
+
+#footer .integrity a {
+    margin-right: 5px
+}
+
+#footer .support-feedback {
+    max-width: 1000px;
+    margin: 0 auto 10px;
+    color: #ccc;
+    font-size: 14px
+}
+
+#footer .cs {
+    float: left
+}
+
+#footer .cs a {
+    color: #ccc
+}
+
+.cs .cs-online {
+    margin-right: 37px
+}
+
+.support-feedback .icon {
+    background-image: url(http://overwatch.nos.netease.com/1/images/common/sprite-24-blue.png);
+    background-repeat: no-repeat;
+    background-size: auto
+}
+
+.support-feedback .icon-1, .support-feedback .icon-2 {
+    display: inline-block;
+    height: 24px;
+    margin-right: 7px;
+    position: relative;
+    top: 5px;
+    width: 24px
+}
+
+.support-feedback .icon-1 {
+    background-position: -96px 0
+}
+
+.support-feedback .icon-2 {
+    background-position: -144px -24px;
+    top: 6px
+}
+
+.support-feedback .business {
+    float: right;
+    vertical-align: top;
+    position: relative
+}
+
+.business .icon-apply, .business .icon-more {
+    background: #262626 none repeat scroll 0 0;
+    border: 1px solid #262626;
+    color: #ac771f;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    margin: 0 13px;
+    padding-top: 0;
+    position: relative;
+    top: 3px;
+    width: 14px
+}
+
+.business .icon-more {
+    margin-right: 0
+}
+
+.business .icon-media {
+    margin-left: 13px
+}
+
+.business strong {
+    display: inline
+}
+
+.business .icon-apply i.line-h {
+    height: 2px;
+    margin: -1px 0 0 -5px;
+    width: 10px
+}
+
+.business .icon-apply i.line-s {
+    height: 10px;
+    margin: -5px 0 0 -1px;
+    width: 2px
+}
+
+.business .icon-apply i.line-h, .business .icon-apply i.line-s {
+    background: #ccc none repeat scroll 0 0;
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%
+}
+
+.business .icon-apply:hover i.line-h, .business .icon-apply:hover i.line-s {
+    background: #fff
+}
+
+.business .icon-more i {
+    border: 4px solid transparent;
+    border-top-color: #ccc;
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2px 0 0 -4px
+}
+
+.business .icon-more:hover i {
+    border-top-color: #fff
+}
+
+.business .icon-more.hidden i {
+    border-bottom-color: #ccc;
+    border-top-color: transparent;
+    margin: -6px 0 0 -4px
+}
+
+.business .icon-more.hidden:hover i {
+    border-bottom-color: #fff
+}
+
+.business .businessList {
+    display: inline
+}
+
+.business .businessList li {
+    display: inline-block
+}
+
+.business .businessList li img {
+    vertical-align: bottom
+}
+
+#footer .joiner {
+    width: 671px;
+    background: #0f0f0f;
+    border: 1px solid #151616;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    display: none;
+    z-index: 1
+}
+
+#footer .joiner ul {
+    padding: 10px 0 10px 20px
+}
+
+#footer .joiner li {
+    float: left;
+    line-height: 22px;
+    text-align: left;
+    padding-right: 10px;
+    width: 83px
+}
+
+#footer .joiner li a {
+    color: gray
+}
+
+#footer .joiner li a:hover {
+    color: #fff
+}
+
+#footer .joiner li.apply {
+    display: block;
+    float: right
+}
+
+#footer .joiner li.apply a {
+    color: #ea8631;
+    text-decoration: underline
+}
+
+#footer .joiner li.apply a:hover {
+    color: #fff
+}
+
+@font-face {
+    font-family: ow_icon;
+    src: url(/css/fonts/ow.ttf)
+}
+
+@font-face {
+    font-family: price_num;
+    src: url(/css/fonts/BIGNOODLETOOOBLIQUE.ttf)
+}
+
+.heroes-icon {
+    font-family: ow_icon;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 2rem;
+    margin: 0 3px;
+    vertical-align: middle;
+    color: #00c3ff
+}
+
+.role-tank:before {
+    content: '\e614'
+}
+
+.role-defense:before {
+    content: '\e615'
+}
+
+.role-offense:before {
+    content: '\e616'
+}
+
+.role-support:before {
+    content: '\e617'
+}
+
+.badge:before {
+    content: '\e619'
+}
+
+.globe:before {
+    content: '\e620'
+}
+
+.briefcase:before {
+    content: '\e621'
+}
+
+.hero-card:before {
+    content: '\e622'
+}
+
+.u-btn-skew {
+    display: inline-block;
+    width: 100%;
+    padding: .2rem;
+    -webkit-transform: skew(-.25rad);
+    -ms-transform: skew(-.25rad);
+    transform: skew(-.25rad);
+    text-align: center;
+    color: #fff;
+    border: 1px solid #00c3ff;
+    border-radius: 4px
+}
+
+.u-btn-skew strong {
+    display: block;
+    padding: .5rem;
+    border-radius: 4px;
+    background-color: rgba(0, 195, 255, .5)
+}
+
+.u-btn-skew span {
+    display: block;
+    -webkit-transform: skew(.25rad);
+    -ms-transform: skew(.25rad);
+    transform: skew(.25rad)
+}
+
+.u-btn-skew-white {
+    padding: .7rem 0;
+    border: 2px solid #fff
+}
+
+.u-btn-skew-white.active, .u-btn-skew-white:hover {
+    color: #511616;
+    background: #fff
+}
+
+.u-btn-skew-yellow {
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    color: #511616;
+    border: none;
+    background: #ffc70e
+}
+
+.u-btn-skew-yellow:hover {
+    color: #511616;
+    background: #fff
+}
+
+nav {
+    position: relative
+}
+
+nav > div {
+    padding: 0 .2rem;
+    vertical-align: middle !important
+}
+
+#popBox {
+    position: absolute;
+    z-index: 99999;
+    display: none;
+    width: 70%;
+    height: 100%
+}
+
+#boxModel {
+    position: absolute;
+    z-index: 99998;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+#popBox .closeBtn {
+    position: absolute;
+    z-index: 99999;
+    top: 5px;
+    right: 5px;
+    display: block;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    transition: opacity .5s ease 0s;
+    text-indent: -999px;
+    opacity: .8;
+    background: url(http://overwatch.nos.netease.com/1/images/heroes/detail/exit.3OOEf.png) 0 0 no-repeat;
+    background-size: contain
+}
+
+#popBox .closeBtn:hover {
+    opacity: 1;
+    background-position: 0 0
+}
+
+.w-light-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid rgba(0, 195, 255, .1);
+    background: rgba(3, 12, 21, .98)
+}
+
+.w-light-box .head {
+    height: 15%;
+    padding: .5em 0 0;
+    border-bottom: 1px solid rgba(0, 195, 255, .1);
+    font-size: 12px
+}
+
+.w-light-box .title {
+    font-size: 2.8em;
+    padding-bottom: .2em
+}
+
+.w-light-box .num {
+    color: #00c3ff;
+    font-size: 1.8em
+}
+
+.w-light-box .info {
+    font-size: 1.6em;
+    height: 15%;
+    padding: .5em;
+    text-align: left;
+    border-top: 1px solid rgba(0, 195, 255, .1)
+}
+
+.w-light-box .content {
+    height: 70%;
+    padding: 1em 0
+}
+
+.w-light-box .content .pic {
+    display: none
+}
+
+.w-light-box .content .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px
+}
+
+.w-light-box .control a {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 64px;
+    height: 69px;
+    margin-top: -34px;
+    margin-right: 1rem;
+    margin-left: 1rem
+}
+
+.w-light-box .control a.prev {
+    left: 0;
+    background: url(http://overwatch.nos.netease.com/1/images/heroes/detail/arrow-left.2HQ0H.png);
+    background-size: cover
+}
+
+.w-light-box .control a.next {
+    right: 0;
+    background: url(http://overwatch.nos.netease.com/1/images/heroes/detail/arrow-right.1hVyK.png);
+    background-size: cover
+}
+
+.w-light-box video {
+    width: 100%;
+    height: 100%
+}
+
+.w-share {
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 10px;
+    -webkit-transition: top 300ms ease;
+    transition: top 300ms ease
+}
+
+.pure-menu.menu-hidden .w-share {
+    top: -30rem
+}
+
+.w-share li {
+    float: left;
+    margin-right: -.5rem
+}
+
+.w-share li a {
+    display: block;
+    width: 50px;
+    height: 54px;
+    transition: background-position .3s;
+    background: url(http://overwatch.nos.netease.com/1/images/layout/share.png) no-repeat 0 0
+}
+
+.w-share li a:hover {
+    transition: background-position .3s
+}
+
+.w-share li a.jiathis_button_tsina {
+    background-position: -3px -1px
+}
+
+.w-share li a.jiathis_button_tqq {
+    background-position: -55px -1px
+}
+
+.w-share li a.jiathis_button_weixin {
+    background-position: -159px -1px
+}
+
+.w-share li a.jiathis_button_yixin {
+    background-position: -107px -1px
+}
+
+.w-share li a.jiathis_button_tieba {
+    background-position: -211px -1px
+}
+
+.w-share li a.jiathis_button_tsina:hover {
+    background-position: -3px -60px
+}
+
+.w-share li a.jiathis_button_tqq:hover {
+    background-position: -55px -60px
+}
+
+.w-share li a.jiathis_button_weixin:hover {
+    background-position: -159px -60px
+}
+
+.w-share li a.jiathis_button_yixin:hover {
+    background-position: -107px -60px
+}
+
+.w-share li a.jiathis_button_tieba:hover {
+    background-position: -211px -60px
+}
+
+.share-wrap {
+    position: relative
+}
+
+.share-wrap #side-menu {
+    top: 30px;
+    margin-top: 0;
+    display: none
+}
+
+.cprt .ie_warning {
+    display: none;
+    width: 355px;
+    height: 75px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    line-height: 14px;
+    font-size: 11px;
+    text-align: left;
+    background: url(http://heroes.nos.netease.com/1/images/common/hos_warning.jpg) top center no-repeat
+}
+
+.ie_warning .ie_warning_txt {
+    color: #040000;
+    height: 50px;
+    padding: 6px 0 0 70px;
+    width: 265px
+}
+
+.ie_warning .ie_warning_txt span {
+    color: red
+}
+
+.ie_warning .ie_waring_txt2 {
+    padding-left: 10px;
+    color: #ffba00
+}
+
+.beta.section {
+    background: url(http://overwatch.nos.netease.com/1/images/home/bg-section-beta.jpg) no-repeat top center;
+    background-size: cover;
+    font-size: 3.2rem;
+    border-bottom: none
+}
+
+@media only screen and (max-width: 1441px) {
+    .w-share {
+        width: 50px
+    }
+
+    .w-share li {
+        margin-top: -10px
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .pre-purchase-container .btn {
+        font-size: 1.2em;
+        padding: 8px 36px
+    }
+
+    .pure-menu-item.logo {
+        width: 120px;
+        height: 84px;
+        margin-right: -18px;
+        margin-left: -20px;
+        background-image: url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png)
+    }
+
+    .pure-menu-item {
+        margin-top: 0
+    }
+
+    .pure-menu-item.home {
+        top: 25px;
+        height: 33px
+    }
+
+    .pure-menu-item.buy {
+        top: 20px;
+        right: 20px
+    }
+
+    .pure-menu-item.logo {
+        margin-top: -1px
+    }
+
+    .pure-menu-item .menu-btn-inner span {
+        font-size: 14px;
+        padding: 6px 0
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #footer .cprt, #footer .cprt .info {
+        text-align: center
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .pre-purchase-container .btn {
+        font-size: 1em;
+        padding: 8px 25px
+    }
+
+    .pre-purchase-container-inner .tip {
+        font-size: 12px;
+        left: -20px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        min-height: 20rem;
+        text-align: center
+    }
+
+    footer .logo_bz {
+        width: 90px;
+        height: 48px;
+        background-size: cover
+    }
+
+    footer .logo_ne {
+        width: 90px;
+        height: 28px;
+        margin: 0 5px;
+        background-size: cover
+    }
+
+    footer .cprt {
+        width: 98%
+    }
+
+    footer .cprt .info {
+        padding: 10px 0 0;
+        display: block
+    }
+
+    footer .cprt .info p {
+        text-align: center
+    }
+
+    #popBox {
+        position: absolute;
+        z-index: 99999;
+        display: none;
+        width: 100%;
+        height: 70%
+    }
+
+    .w-light-box .head {
+        font-size: 8px
+    }
+
+    .w-light-box .control a {
+        width: 30px;
+        height: 32px
+    }
+
+    #popBox .closeBtn {
+        width: 24px;
+        height: 24px
+    }
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 768px) {
+    .w-share {
+        right: 5rem
+    }
+}
