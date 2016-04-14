@@ -12,7 +12,7 @@ var config       = require('../config');
 var gulp         = require('gulp');
 // var sass         = require('gulp-sass');
 var gulpif       = require('gulp-if');
-//var handleErrors = require('../util/handleErrors');
+var handleErrors = require('../utils/handleErrors');
 var browserSync  = require('browser-sync').get('saber');
 var less         = require('gulp-less');
 // 自动给 css3 属性加浏览器前缀, 如: `-webkit-`
@@ -27,8 +27,9 @@ gulp.task('styles', function () {
   return gulp.src(config.styles.src)
       .pipe(sourcemaps.init())
       .pipe(less())
+      .on('error', handleErrors)
       .pipe(autoprefixer("last 2 versions", "> 1%", "ie 8"))
-      //.on('error', handleErrors)
+      .on('error', handleErrors)
       //.pipe(minifycss())
       //.pipe(rev())
 
