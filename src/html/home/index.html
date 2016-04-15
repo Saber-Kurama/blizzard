@@ -3,42 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <!-- 用来指定IE的兼容模式 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <!-- 版权信息 -->
-    <meta name="copyright" content="&copy;2015 暴雪娱乐股份有限公司版权所有 上海网之易网络科技发展有限公司" />
+    <meta name="copyright" content="&copy;2015 暴雪娱乐股份有限公司版权所有 上海网之易网络科技发展有限公司"/>
     <!-- 控制状态栏显示样式 -->
-    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
     <!-- 设置网站 图标-->
-    <link rel="icon" href="http://blz.nos.netease.com/1/overwatch/images/common/overwatch.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="http://blz.nos.netease.com/1/overwatch/images/common/overwatch.ico" type="image/x-icon"/>
+    <link rel="icon"
+          href="http://blz.nos.netease.com/1/overwatch/images/common/overwatch.ico"
+          type="image/x-icon"/>
+    <link rel="shortcut icon"
+          href="http://blz.nos.netease.com/1/overwatch/images/common/overwatch.ico"
+          type="image/x-icon"/>
     <!-- 设置移动端 标题-->
     <meta name="apple-mobile-web-app-title" content="《守望先锋™》官方网站">
-    <meta content="width=device-width,maximum-scale=1.0" name="viewport" />
+    <meta content="width=device-width,maximum-scale=1.0" name="viewport"/>
     <!-- 图标 -->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://overwatch.nos.netease.com/1/images/layout/icon-iphone.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="http://overwatch.nos.netease.com/1/images/layout/icon-iphone-retina.png" />
-    <meta name="keywords" content="守望先锋，overwatch，守望先锋官网,overwatch官网，守望先锋国服，overwatch国服" />
-    <meta name="description" content="《守望先锋™》是暴雪出品的首款团队射击游戏，现已正式来到中国。游戏以近未来地球为背景，来自全球的超级英雄们将使用自己独特的能力在战场上厮杀，带给玩家顶尖的射击体验。" />
+    <link rel="apple-touch-icon" sizes="57x57"
+          href="http://overwatch.nos.netease.com/1/images/layout/icon-iphone.png"/>
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="http://overwatch.nos.netease.com/1/images/layout/icon-iphone-retina.png"/>
+    <meta name="keywords"
+          content="守望先锋，overwatch，守望先锋官网,overwatch官网，守望先锋国服，overwatch国服"/>
+    <meta name="description"
+          content="《守望先锋™》是暴雪出品的首款团队射击游戏，现已正式来到中国。游戏以近未来地球为背景，来自全球的超级英雄们将使用自己独特的能力在战场上厮杀，带给玩家顶尖的射击体验。"/>
 
     <title>《守望先锋™》官方网站</title>
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="<!-- @echo WEB_ROOT -->/css/index.css"/>
+    <link rel="stylesheet" href="<!-- @echo WEB_ROOT -->/css/home.css"/>
 </head>
 <body>
-    <header class="head">
-        <div class="nav show-for-small-down">
-            <div class="nav-btn burger"> <i class="icon burger-nav"></i>
-            </div>
-            <a href="/home/"> <i class="icon logo"></i>
-            </a>
+<header class="head">
+    <div class="nav show-for-small-down">
+        <div class="nav-btn burger"><i class="icon burger-nav"></i>
         </div>
-    </header>
-    <div class="nav-burger-content-wrap">
-        sss
+        <a href="/home/"> <i class="icon logo"></i>
+        </a>
     </div>
-    <script src="/js/vendors.min.js"></script>
-    <!-- build:js /js/home.min.js -->
-    <script src="/js/home.js"></script>
-    <script src="/js/home123.js"></script>
-    <!-- endbuild -->
+</header>
+<div class="nav-burger-content-wrap">
+    <div class="nav-burger-content">
+        <div class="exit">
+            <i class="icon x"></i>
+        </div>
+        <ul class="menu-main">
+            <li class="menu-item">
+                <a class=" " href="/home/" title="首页">
+                    <i class="icon double-arrow"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="" href="/game/" title="游戏特色">
+                    <i class="icon double-arrow"></i>
+                    <span>游戏特色</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="" href="/heroes/" title="英雄">
+                    <i class="icon double-arrow"></i>
+                    <span>英雄</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="" href="/article/news/" title="新闻">
+                    <i class="icon double-arrow"></i>
+                    <span>新闻</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="" href="/media/" title="视频图片">
+                    <i class="icon double-arrow"></i>
+                    <span>视频图片</span>
+                </a>
+            </li>
+        </ul>
+        <a href="/buy/" class="btn btn-primary btn-lg">
+            <span>立即预购</span>
+        </a>
+    </div>
+</div>
+
+<div class="body">
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px auto;
+</div>
+<script src="<!-- @echo WEB_ROOT -->/js/vendors.min.js"></script>
+<!-- @if NODE_ENV!='production' -->
+<!-- build:js /js/home.min.js -->
+<script src="<!-- @echo WEB_ROOT -->/js/home.js"></script>
+<script src="<!-- @echo WEB_ROOT -->/js/home123.js"></script>
+<!-- endbuild -->
+<!--@endif-->
+<!-- @if NODE_ENV=='production' -->
+<script src="<!-- @echo WEB_ROOT -->/js/home.min.js"></script>
+<!--@endif-->
 </body>
 </html>

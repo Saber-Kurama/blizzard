@@ -51,7 +51,7 @@ module.exports = {
   },
   'styles':{
     'watch':['src/less/*.less','src/less/*/*.less'],
-    'src': ['src/less/index.less'],
+    'src': ['src/less/index.less', 'src/less/home/home.less'],
     'dest': 'dist/css'
   },
   'views': {
@@ -66,6 +66,7 @@ module.exports = {
   'rev':{
     vendor: 'rev/vendor',
     js: 'rev/js',
+    css: 'rev/css',
     revPath: 'rev/**/*.json',
     htmlsrc: ['dist/index.html','dist/**/*.html']
   },

@@ -8,4 +8,5 @@ npm-debug*
 .env
 .DS_Store
 .publish
+.codingpages
 .idea

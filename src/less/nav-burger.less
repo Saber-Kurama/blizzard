@@ -5,5 +5,65 @@
   right: 100%;
   height: 100%;
   width: 80%;
-  background-color: rgba(8, 27, 43, .98)
+  background-color: rgba(8, 27, 43, .98);
+  & .nav-burger-content{
+    font-size: 16px;
+    position: relative;
+    padding-top: 99px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/overwatch-burger-header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 255px;
+  }
+  & .exit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em 20px 16px .5em;
+    cursor: pointer;
+  }
+  & .menu-main{
+    text-align: left;
+    & .menu-item{
+      &:first-child{
+        border-top: 1px solid #0b3146;
+      }
+      text-transform: uppercase;
+      border-top: none;
+      border-bottom: 1px solid #0b3146;
+      & a{
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 5rem;
+        & .icon{
+          position: absolute;
+          top: 0;
+          right: 25px;
+          bottom: 0;
+          margin: auto;
+        }
+        & span{
+          display: table-cell;
+          padding-left: 10%;
+          vertical-align: middle;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .btn-lg{
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px auto;
+  }
+}
+
+i.icon.double-arrow {
+  width: 34px;
+  height: 34px
 }

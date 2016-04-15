@@ -16,6 +16,7 @@ var gulpif = require('gulp-if');
 var rename = require('gulp-rename');
 var rev = require('gulp-rev');
 var revCollector = require('gulp-rev-collector');
+var preprocess = require('gulp-preprocess');
 // 创建一个 views 任务
 gulp.task("views",function(){
   //var revpath = [config.rev.revPath];
@@ -24,7 +25,15 @@ gulp.task("views",function(){
   //  wildcard = revpath.concat(wildcard)
   //}
   return gulp.src(config.views.src)
-      .pipe(gulpif(global.argv.production, useref({searchPath: config.src})))
+      .pipe(gulpif(global.argv.production,
+          useref({
+            searchPath: config.src,
+            transformPath: function(filePath){
+              console.log(filePath);
+              return filePath;
+            }
+          })))
+      .pipe(preprocess({context: process.env}))
       .pipe(gulpif('*.js', uglify()))
       //.pipe(gulpif('*.js', rename({ suffix: '.min' })))
       .pipe(gulpif('*.js', rev()))

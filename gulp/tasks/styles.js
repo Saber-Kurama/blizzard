@@ -17,7 +17,7 @@ var browserSync  = require('browser-sync').get('saber');
 var less         = require('gulp-less');
 // 自动给 css3 属性加浏览器前缀, 如: `-webkit-`
 var autoprefixer = require('gulp-autoprefixer');
-//var minifycss    = require('gulp-minify-css');
+var cssnano    = require('gulp-cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var rev = require('gulp-rev');
 
@@ -30,13 +30,13 @@ gulp.task('styles', function () {
       .on('error', handleErrors)
       .pipe(autoprefixer("last 2 versions", "> 1%", "ie 8"))
       .on('error', handleErrors)
-      //.pipe(minifycss())
-      //.pipe(rev())
+      .pipe(gulpif(global.argv.production, cssnano()))
+      .pipe(gulpif(global.argv.production, rev()))
 
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.styles.dest))
-      //.pipe( rev.manifest() )
-      //.pipe( gulp.dest('rev/css') )
+      .pipe( rev.manifest() )
+      .pipe( gulp.dest(config.rev.css) )
       .pipe(gulpif((browserSync && browserSync.active), browserSync.stream()));
 
 });
