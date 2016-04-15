@@ -44,11 +44,18 @@ npm install
 
 # 开发环境
 
+`cp .example.env .env` 并且设置环境变量
+
 ```
 npm run dev
 ```
 
 # 发布
+
+
+`cp .product.env .env` 并且设置环境变量
+
+
 
 ```
 npm run production
