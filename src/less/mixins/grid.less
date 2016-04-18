@@ -1,0 +1,29 @@
+.calc-grid-column(@index, @gridindex @class, @type) when  (@type= width) and (@index > 0){
+  .pure-u-@{class}-@{index}-@{gridindex} {
+    width: percentage((@index / @gridindex));
+    *width: percentage((@index / @gridindex));
+  }
+}
+
+.calc-grid-column(@index, @gridindex  @type) when  (@type= width) and (@index > 0){
+.pure-u-@{index}-@{gridindex} {
+  width: percentage((@index / @gridindex));
+  *width: percentage((@index / @gridindex));
+}
+}
+
+.loop-grid-columns(@index, @gridindex, @class, @type) when (@index >= 0){
+  .calc-grid-column(@index, @gridindex, @class, @type);
+  .loop-grid-columns(@index - 1, @gridindex, @class, @type);
+}
+.loop-grid-columns(@index, @gridindex,  @type) when (@index >= 0){
+  .calc-grid-column(@index, @gridindex, @type);
+  .loop-grid-columns(@index - 1, @gridindex, @type);
+}
+.mark-pure-grid(@index, @class){
+  .loop-grid-columns(@index, @index, @class, width);
+}
+
+.mark-pure-grid(@index){
+  .loop-grid-columns(@index, @index,  width);
+}

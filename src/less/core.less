@@ -32,3 +32,60 @@ a {
 a:link, a:visited {
   outline: 0
 }
+
+
+body, html {
+  overflow-x: hidden
+}
+
+body {
+  color: #fff;
+  background: #102e56
+}
+
+a {
+  transition: color 200ms ease 0s;
+  color: #ffc70e
+}
+
+a:focus, a:hover {
+  color: #fff
+}
+
+.shadow-text, a, h1, h2, h3, h4, h5, h6, p, span {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+}
+
+.clearFix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: '.'
+}
+
+.clearFix {
+  display: block;
+  *display: inline-block
+}
+
+* html .clearFix {
+  height: 1%
+}
+
+.wrapper {
+  position: relative;
+  -webkit-transition: all .6s ease 0s;
+  transition: all .6s ease 0s
+}
+
+.wrapper .body .section {
+  padding: 0
+}
+
+.g-wrap-limit {
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto
+}

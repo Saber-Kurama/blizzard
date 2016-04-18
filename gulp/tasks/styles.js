@@ -35,8 +35,8 @@ gulp.task('styles', function () {
 
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.styles.dest))
-      .pipe( rev.manifest() )
-      .pipe( gulp.dest(config.rev.css) )
-      .pipe(gulpif((browserSync && browserSync.active), browserSync.stream()));
+      .pipe( gulpif(global.argv.production,rev.manifest()) )
+      .pipe( gulpif(global.argv.production,gulp.dest(config.rev.css)) )
+      .pipe(gulpif((browserSync && browserSync.active || console.log('ss','???')), browserSync.stream()));
 
 });

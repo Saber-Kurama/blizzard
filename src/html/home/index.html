@@ -34,6 +34,9 @@
 </head>
 <body>
 <header class="head">
+    <div>
+
+    </div>
     <div class="nav show-for-small-down">
         <div class="nav-btn burger"><i class="icon burger-nav"></i>
         </div>
@@ -85,12 +88,31 @@
 </div>
 
 <div class="body">
-    width: 80%;
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 30px auto;
+    <div class="section chars">
+        <div class="g-wrap-limit">
+            <div class="chars-con">
+                <h2 class="tagline">这个世界，需要英雄</h2>
+                <ul class="selection-wrap">
+                    <li class="selection-item">
+                        <div class="selection-link-wrap">
+                            <a class="selection-link">
+                                <span class="portrait-wrap">
+                                    <span class="portrait">
+                                        <img src="http://overwatch.nos.netease.com/1/images/heroes/dva/icon-portrait.png">
+                                    </span>
+                                </span>
+                                <span class="nametag">
+                                    D.Va
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-<script src="<!-- @echo WEB_ROOT -->/js/vendors.min.js"></script>
+<script src="<!-- @echo WEB_ROOT -->/js/vendors.js"></script>
 <!-- @if NODE_ENV!='production' -->
 <!-- build:js /js/home.min.js -->
 <script src="<!-- @echo WEB_ROOT -->/js/home.js"></script>
