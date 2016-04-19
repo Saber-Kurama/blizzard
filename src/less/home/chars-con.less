@@ -52,8 +52,16 @@
     }
   }
 
-  .selction-link{
+  .selection-link{
     display: block;
+    &:hover {
+      .portrait {
+        background-color: #ffc70e;
+        -webkit-transition: all .4s;
+        -ms-transition: all .4s;
+        transition: all .4s;
+      }
+    }
   }
 
   .portrait-wrap{
@@ -97,6 +105,7 @@
       width: 80px;
       margin-left: 3px;
       margin-right: 3px;
+      margin-bottom: 4rem;
       -webkit-transform: none;
       transform: none;
       .portrait , .nametag{
