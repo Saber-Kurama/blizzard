@@ -1,0 +1,111 @@
+#footer {
+  position: relative;
+  font-size: 12px;
+  width: auto;
+  margin: 0;
+  background: #102e56;
+  .footerWrap {
+    padding: 40px 0 0;
+    margin-bottom: 40px;
+    border-top: 1px solid rgba(34, 117, 187, .5);
+
+    a{
+      text-decoration: none;
+      color: #2275bb;
+    }
+  }
+  .support-feedback {
+    max-width: 1000px;
+    margin: 0 auto 10px;
+    color: #ccc;
+    font-size: 14px;
+    .icon {
+      background-image: url(http://overwatch.nos.netease.com/1/images/common/sprite-24-blue.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+    .icon-1, .icon-2 {
+      display: inline-block;
+      height: 24px;
+      margin-right: 7px;
+      position: relative;
+      top: 5px;
+      width: 24px;
+    }
+    .icon-1 {
+      background-position: -96px 0;
+    }
+    .icon-2 {
+      background-position: -144px -24px;
+      top: 6px;
+    }
+  }
+  .cs {
+    float: left;
+    .cs-online {
+      margin-right: 37px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px)
+footer {
+  min-height: 20rem;
+  text-align: center;
+}
+
+#footer .cprt {
+  max-width: 1000px;
+  margin: 50px auto 8px;
+  padding: 0 0 30px;
+  border-bottom: 1px solid #184f85;
+
+  .info{
+    position: relative;
+    display: inline-block;
+    padding: 20px 0 0 10%;
+    text-align: center;
+    vertical-align: middle;
+    color: #2275bb;
+    ul li{
+      color: #ccc;
+      display: inline-block;
+      font-size: 14px;
+      padding-right: 10px;
+      a{
+        color: #fff;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #footer .cprt {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #footer .cprt {
+    width: 98%;
+  }
+}
+
+#footer .logo_bz{
+  display: inline-block;
+  overflow: hidden;
+  width: 140px;
+  height: 80px;
+  vertical-align: middle;
+  background: url(http://overwatch.nos.netease.com/1/images/layout/blizzard.png) no-repeat 0 0;
+}
+
+#footer .logo_ne {
+  display: inline-block;
+  overflow: hidden;
+  width: 105px;
+  height: 33px;
+  margin: 34px 0 0 20px;
+  vertical-align: middle;
+  background: url(http://overwatch.nos.netease.com/1/images/layout/logo_ne.png) no-repeat 0 0;
+}
