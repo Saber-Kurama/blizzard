@@ -6,10 +6,8 @@
 /**
  * Created by saber on 16/4/7.
  */
-var home = {
+var Home = {
     init: function(){
-        console.log('why');
-        var username = 'saber';
-        console.log('????/');
+
     }
 };
