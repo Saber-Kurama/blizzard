@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.pure-menu .pure-menu-list {
+.pure-menu .pure-menu-list, .pure-menu .menu-main-pin .pin {
   z-index: 400;
   -webkit-transition: top 300ms ease;
   transition: top 300ms ease
@@ -46,4 +46,23 @@
     zoom: 1;
     vertical-align: middle
   }
+}
+.pure-menu .menu-main-pin .pin {
+  position: fixed;
+  z-index: 1000;
+  top: -28px;
+  right: 0;
+  left: 50%;
+  width: 95px;
+  height: 28px;
+  margin-left: -48px;
+  cursor: pointer;
+  background: url(http://overwatch.nos.netease.com/1/images/layout/main-menu-pin.png) no-repeat center bottom
+}
+.pure-menu.menu-hidden .pure-menu-list {
+  top: -150px
+}
+
+.pure-menu.menu-hidden .menu-main-pin .pin {
+  top: 0
 }
