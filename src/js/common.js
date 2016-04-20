@@ -47,6 +47,6 @@ var Common = {
       wrapper.removeClass(cssclass);
       $('#boxModel').remove();
     });
-    
+
   }
 };

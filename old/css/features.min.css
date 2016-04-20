@@ -1174,7 +1174,8 @@ a:link, a:visited {
     background-size: contain
 }
 
-.pure-menu-horizontal .pure-menu-heading, .pure-menu-horizontal .pure-menu-item, .pure-menu-horizontal .pure-menu-separator {
+.pure-menu-horizontal .pure-menu-heading,
+.pure-menu-horizontal .pure-menu-item, .pure-menu-horizontal .pure-menu-separator {
     display: inline-block;
     *display: inline;
     zoom: 1;

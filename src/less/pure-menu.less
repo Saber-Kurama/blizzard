@@ -1,0 +1,49 @@
+.pure-menu {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pure-menu .pure-menu-list {
+  z-index: 400;
+  -webkit-transition: top 300ms ease;
+  transition: top 300ms ease
+}
+.pure-menu-fixed {
+  left: 0;
+  top: 0;
+  z-index: 3;
+  position: fixed;
+}
+
+.pure-menu-horizontal {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.pure-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.pure-menu-item {
+  padding: 0;
+  margin: 0;
+  height: 100%
+}
+
+.pure-menu-horizontal {
+  .pure-menu-list {
+    display: inline-block;
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/bg-top.png);
+    -webkit-background-size: contain;
+    -ms-background-size: contain;
+    background-size: contain
+  }
+  .pure-menu-item{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle
+  }
+}

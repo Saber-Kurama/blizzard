@@ -1,0 +1,146 @@
+.head {
+  font-size: 16px;
+  position: relative;
+  z-index: 400
+}
+
+.pure-menu-fixed {
+  position: absolute
+}
+
+.pure-menu-list {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  margin-left: -50%
+}
+
+.pure-menu-item {
+  z-index: 100;
+  width: 13.6%;
+  max-width: 150px;
+  *margin: 0 2px;
+  position: relative;
+  a{
+    display: block;
+    width: 100%;
+    height: 100%
+  }
+  .menu-btn{
+    width: 100%;
+    height: 100%;
+    -webkit-transform: skew(-.25rad);
+    -ms-transform: skew(-.25rad);
+    transform: skew(-.25rad);
+    color: #fff;
+    border: 1px solid #10ade7;
+    border: 1px solid #00c3ff;
+    border-radius: 7px;
+    background-color: #10ade7;
+    background-color: rgba(0, 195, 255, 0);
+    *background-color: #10ade7;
+    *border: 1px solid #10ade7
+  }
+  .menu-btn-inner{
+    span{
+      font-size: 1.6rem;
+      font-weight: 700;
+      display: block;
+      padding: 7px 0;
+      cursor: pointer;
+      -webkit-transform: skew(.25rad);
+      -ms-transform: skew(.25rad);
+      transform: skew(.25rad);
+      text-shadow: none
+    }
+  }
+  .menu-btn-inner:before{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 84%;
+    margin: auto;
+    content: '';
+    border-radius: 4px;
+    background-color: rgba(0, 195, 255, .5);
+  }
+  &.home{
+    height: 38px;
+    left: -30px;
+    position: absolute;
+    top: 37px;
+    .menu-btn, .menu-btn-inner{
+      color: #511616;
+      border-color: #fdda75;
+      background: #ffc70e
+    }
+    .menu-btn-inner:before{
+      background-color: #ffc70e;
+    }
+  }
+  &.logo{
+    width: 156px;
+    height: 108px;
+    margin-top: 3px;
+    margin-right: -22px;
+    margin-left: -25px;
+    background: url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png) no-repeat top center;
+    background-size: contain;
+  }
+  &.buy{
+    right: 50px;
+    top: 30px;
+    height: auto;
+    position: absolute;
+  }
+}
+
+.pre-purchase-container .btn {
+  font-size: 1.4em;
+  padding: 15px 50px;
+}
+.pre-purchase-container-inner .tip {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 0 3px #000;
+}
+
+@media only screen and (max-width: 1280px){
+  .pure-menu-item.logo {
+    margin-top: -1px;
+    width: 120px;
+    height: 84px;
+    margin-right: -18px;
+    margin-left: -20px;
+    background-image: url(http://overwatch.nos.netease.com/1/images/layout/logo-home.png);
+  }
+
+  .pure-menu-item.home {
+    top: 25px;
+    height: 33px;
+  }
+
+  .pure-menu-item.buy {
+    top: 20px;
+    right: 20px;
+  }
+
+  .pre-purchase-container .btn {
+    font-size: 1.2em;
+    padding: 8px 36px;
+  }
+}
+
+
