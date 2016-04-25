@@ -18,6 +18,6 @@ gulp.task("scripts",function(){
   return gulp.src(config.scripts.src)
       .pipe(cache('scripts'))
       .pipe(gulpif(global.argv.production, uglify()))
-      .pipe(gulp.dest(config.scripts.dest));
-  //.pipe(gulpif(browserSync.active, browserSync.reload()));
+      .pipe(gulp.dest(config.scripts.dest))
+      .pipe(gulpif((browserSync && browserSync.active), browserSync.stream()));
 });
