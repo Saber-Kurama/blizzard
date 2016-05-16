@@ -1,0 +1,26 @@
+@keyframes fadein-left{
+  0%{
+    opacity: 0;
+    transform: translate3d(160px, 0, 0);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadein-bounce-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(160px, 0, 0);
+    transform: translate3d(160px, 0, 0)
+  }
+  60% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0)
+  }
+}

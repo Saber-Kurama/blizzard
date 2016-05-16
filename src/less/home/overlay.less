@@ -1,0 +1,117 @@
+.body .chars.section {
+  &.overlay-ready{
+    .character-overlay-wrap{
+      .character-overlay,
+      .character-overlay-text-border,
+      .character-overlay-text{
+        display: block;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &.overlay-loaded{
+    &:before {
+      opacity: 1;
+      transition-delay: 0;
+    }
+
+    .character-overlay-wrap .character-overlay{
+      -webkit-animation-name: fadein-left;
+      animation-name: fadein-left;
+      visibility: visible;
+    }
+  }
+  .overlay-loaded:before{
+    opacity: 1;
+    transition-delay: 0;
+  }
+  .character-overlay-wrap {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    height: 95%;
+    top: 5%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    z-index: 0;
+    //background: red;
+    &.loading{
+      background: url(http://overwatch.nos.netease.com/1/images/layout/preload.gif) no-repeat center 40%
+    }
+    .character-overlay,
+    .character-overlay-text,
+    .character-overlay-text-border{
+      display: none;
+      -webkit-animation-name: fadeout-right;
+      animation-name: fadeout-right;
+      -webkit-animation-duration: 300ms;
+      animation-duration: 300ms;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      transition: 300ms visibility ease
+    }
+    .character-overlay{
+      height: 100%;
+      width: 100%;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: contain
+    }
+    .character-overlay-text-border{
+      border-right: 5px solid #fff;
+      border-radius: 10px;
+      padding: 10px 20px;
+      position: absolute;
+      top: 20%;
+      left: 60%;
+      -webkit-animation-duration: 300ms;
+      animation-duration: 300ms;
+      &.overlay-loaded{
+        animation-name: fadein-bounce-left;
+        visibility: visible;
+      }
+    }
+
+    .character-overlay-text{
+      line-height: 30px;
+      position: relative;
+      display: inline-block;
+      background: url(http://overwatch.nos.netease.com/1/images/layout/blue-px1.png) repeat;
+      border-radius: 10px;
+      width: auto;
+      padding: 1rem 2rem;
+      .character-overlay-text-label{
+        font-size: 1.8rem;
+        text-align: left;
+        margin-top: 1rem;
+        display: block;
+        text-transform: uppercase;
+        p{
+          color: #00c3ff;
+          display: inline-block;
+          margin: 0 0 0 .1rem
+        }
+      }
+      &.overlay-loaded{
+        -webkit-animation-name: fadein-bounce-left;
+        animation-name: fadein-bounce-left;
+        visibility: visible
+      }
+    }
+  }
+
+
+}
+
+.section-header {
+  font-size: 6.2rem;
+  line-height: 6.2rem;
+  font-weight: 400;
+  text-shadow: 2.5px -2px .5px rgba(35, 31, 32, .1), -2.5px 2px .5px rgba(35, 31, 32, .1), -2.5px -2px .5px rgba(35, 31, 32, .1), 2.5px 2px .5px rgba(35, 31, 32, .1);
+  transform: skew(-.25rad)
+}

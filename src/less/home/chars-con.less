@@ -26,6 +26,13 @@
   }
   .selection-item{
     display: inline;
+    &:nth-child(8):after{
+      display: none;
+    }
+    &:nth-child(14):after{
+      content: '\A';
+      white-space: pre;
+    }
   }
 
   .selection-link-wrap{
@@ -91,7 +98,38 @@
   }
 }
 
+@media only screen and (max-width: 1681px) {
+  .body .chars.section{
+    background-position: center -80px;
+    background-size: 150% auto;
+    padding-top: 48%;
+    &:before{
+      background-size: 150% auto;
+      background-position: center -80px;
+    }
+    .tagline{
+      font-size: 56px;
+    }
 
+
+    .portrait-wrap{
+      height: 90px;
+      width: 90px;
+    }
+
+    .selection-item{
+      &:nth-child(14):after{
+        display: none;
+      }
+
+      &:nth-child(7):after{
+        content: '\A';
+        white-space: pre;
+      }
+    }
+
+  }
+}
 @media only screen and (max-width: 640px) {
   .body .chars.section {
     .tagline {

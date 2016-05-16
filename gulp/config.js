@@ -42,6 +42,7 @@ module.exports = {
     'dist':'vendors.js',
     'src': [
       'bower_components/jquery/dist/jquery.min.js',
+      'bower_components/jquery.imgpreload/jquery.imgpreload.js',
       'bower_components/fastclick/lib/fastclick.js'
     ],
     'dest': 'dist/js'
